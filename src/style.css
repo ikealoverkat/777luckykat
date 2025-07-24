@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: hiruko;
+    src: url("HirukoBlackAlternate.ttf");
+}
+
+@font-face {
+    font-family: regular;
+    src: url("Typo_Round_Regular_Demo.otf");
+}
