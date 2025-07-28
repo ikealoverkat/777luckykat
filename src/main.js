@@ -7,7 +7,53 @@ document.addEventListener('DOMContentLoaded', function() {
       toggleButton.addEventListener('click', function() {
         myDiv.classList.toggle('hidden');
       });
-    });
+    }); //contact open/close button
+
+document.addEventListener('DOMContentLoaded', function() {
+      const toggleButton = document.getElementById('contactclose');
+      const myDiv = document.getElementById('contactopen');
+
+      toggleButton.addEventListener('click', function() {
+        myDiv.classList.toggle('hidden');
+      });
+    }); //contact close button but inside the popup
+
+document.addEventListener('DOMContentLoaded', function() {
+      const toggleButton = document.getElementById('musicicon');
+      const myDiv = document.getElementById('musicopen');
+
+      toggleButton.addEventListener('click', function() {
+        myDiv.classList.toggle('invisible');
+      });
+    }); //music open/close button
+
+document.addEventListener('DOMContentLoaded', function() {
+      const toggleButton = document.getElementById('musicclose');
+      const myDiv = document.getElementById('musicopen');
+
+      toggleButton.addEventListener('click', function() {
+        myDiv.classList.toggle('invisible');
+      });
+    }); //music close button but inside the popup
+
+document.addEventListener('DOMContentLoaded', function() {
+      const toggleButton = document.getElementById('top5artists-click');
+      const myDiv = document.getElementById('top5artists');
+
+      toggleButton.addEventListener('click', function() {
+        myDiv.classList.toggle('hidden');
+      });
+    }); //top 5 artists open/close toggle
+
+document.addEventListener('DOMContentLoaded', function() {
+      const toggleButton = document.getElementById('top5artistsclose');
+      const myDiv = document.getElementById('top5artists');
+
+      toggleButton.addEventListener('click', function() {
+        myDiv.classList.toggle('hidden');
+      });
+    }); //top 5 artists x close button
+
 
     // Assuming you have a div with id="myDraggable"
 const myDraggable = document.getElementById('contactopen');
@@ -54,5 +100,54 @@ function drag(e) {
 }
 
 function setTranslate(xPos, yPos, el) {
+  el.style.transform = `translate3d(${xPos}px, ${yPos}px, 0)`;
+}
+
+//music div draggable
+    // Assuming you have a div with id="musicopen"
+const musicDraggable = document.getElementById('musicopen');
+
+let isDraggingMusic = false;
+let musiccurrentX;
+let musiccurrentY;
+let musicinitialX;
+let musicinitialY;
+let musicxOffset = 0;
+let musicyOffset = 0;
+
+musicDraggable.addEventListener('mousedown', musicdragStart);
+document.addEventListener('mouseup', musicdragEnd);
+document.addEventListener('mousemove', musicdrag);
+
+function musicdragStart(e) {
+  musicinitialX = e.clientX - musicxOffset;
+  musicinitialY = e.clientY - musicyOffset;
+
+  if (e.target === musicDraggable) {
+    isDraggingMusic = true;
+  }
+}
+
+function musicdragEnd(e) {
+  musicinitialX = musiccurrentX;
+  musicinitialY = musiccurrentY;
+  isDraggingMusic = false;
+}
+
+function musicdrag(e) {
+  if (!isDraggingMusic) return;
+
+  e.preventDefault();
+
+  musiccurrentX = e.clientX - musicinitialX;
+  musiccurrentY = e.clientY - musicinitialY;
+
+  musicxOffset = musiccurrentX;
+  musicyOffset = musiccurrentY;
+
+  musicsetTranslate(musiccurrentX, musiccurrentY, musicDraggable);
+}
+
+function musicsetTranslate(xPos, yPos, el) {
   el.style.transform = `translate3d(${xPos}px, ${yPos}px, 0)`;
 }
