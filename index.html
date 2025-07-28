@@ -2,40 +2,116 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>luckykat!</title>
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body class="flex content-center justify-center bg-pink-100 p-20">
-    <div class="bg-white w-max-content h-max-content p-15 rounded-4xl text-center drop-shadow-2xl drop-shadow-blue-950/75">
+  <body class="block content-center justify-center text-center bg-[url(images/background.jpg)] p-20">
+    <div class="bg-white w-fit h-fit p-15 rounded-4xl text-center drop-shadow-2xl drop-shadow-blue-950/75">
         <h1 class="text-8xl text-blue-950 text-shadow-lg/30 text-shadow-blue-950" style="font-family: hiruko;">𐔌՞. .՞𐦯 luckykat☆</h1>
+        <h2 class="text-2xl m-5 text-cyan-600 text-shadow-sm/60 text-shadow-blue-950 " style="font-family: hiruko;">enfp-t ♡ studco publicity ♡ vis artist ♡ web developer</h2>
         <h2 class="text-3xl m-5 text-pink-400 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">hi!! i'm <strong class="text-pink-600">kat</strong> and i luv <strong class="text-pink-300">gambling</strong> (blind boxes and gacha games), making <i>really smart financial decisions</i>, <strong class="text-pink-300">music,</strong> and <strong class="text-pink-300">tech!</strong> (but only sometimes) ♡</h2>
-        <h2 class="text-3xl m-5 text-cyan-200 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">i made this website to show off my sidequest projects and whatever art i feel like making,,, like a portfolio if it was unprofessional LMAO</h2>
-      <div class="bg-pink-100 rounded-3xl m-15 grid grid-cols-5 justify-items-center items-center p-7 [&>div]:duration-200">
-        <div class="row-span-1 w-45 content-center hover:w-50 hover:underline decoration-wavy decoration-cyan-400 active:w-40">
+        <h2 class="text-3xl m-5 text-cyan-200 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">i made this website to show off my sidequest projects and whatever art i feel like making,,, like a portfolio if it was unprofessional LMAO</h2>        
+        <div class="bg-gradient-to-b from-pink-50 via-pink-150 from 50% via-pink-500 from 51% to-pink-350 rounded-3xl m-15 grid grid-cols-5 justify-items-center items-center p-7 [&>div]:duration-350">
+          <!--art--><div class="row-span-1 w-45 content-center hover:w-50 hover:underline decoration-wavy decoration-cyan-400 active:w-40 drop-shadow-white drop-shadow-xl">
           <img src="images/art.png">
           <p class="text-2xl text-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">art</p>
-        </div>
-        <div class="row-span-2 w-45 content-center hover:w-50 hover:underline hover:decoration-wavy decoration-pink-500 active:w-40">
+          </div>
+          <!--projects--><div class="row-span-2 w-45 content-center hover:w-50 hover:underline hover:decoration-wavy decoration-pink-500 active:w-40 drop-shadow-white drop-shadow-xl">
           <img src="images/files.png">
           <p class="text-2xl text-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">projects</p>
-        </div>
-        <div class="row-span-3 w-45 content-center hover:w-50 hover:underline hover:decoration-wavy decoration-cyan-400 active:w-35">
+          </div>
+          <!--music--><div id="musicicon" class="row-span-3 w-45 content-center hover:w-50 hover:underline hover:decoration-wavy decoration-cyan-400 active:w-35 drop-shadow-white drop-shadow-xl">
           <img src="images/music.png">
           <p class="text-2xl text-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">music</p>
-        </div>
-        <div class="row-span-4 w-40 content-center hover:w-45 hover:underline hover:decoration-wavy decoration-pink-500 active:w-30">
+          </div>
+          <!--contact--><button id="contacticon"><div class="row-span-4 w-40 hover: content-center hover:w-45 hover:underline hover:decoration-wavy decoration-pink-500 active:w-30 drop-shadow-white drop-shadow-xl duration-300">
           <img src="images/projects.png">
-          <p class="text-2xl text-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">social media</p>
-        </div>
-        <div class="row-span-5 w-37 content-center hover:w-42 hover:underline hover:decoration-wavy decoration-cyan-400 active:w-37">
+          <p class="text-2xl text-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">contact</p>
+          </div></button>
+          <!--misc--><div class="row-span-5 w-37 content-center hover:w-42 hover:underline hover:decoration-wavy decoration-cyan-400 active:w-37 drop-shadow-white drop-shadow-xl">
           <img src="images/misc.png">
           <p class="text-2xl text-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">misc.</p>
+          </div>
+      </div>
+    </div>  
+    <div class="grid grid-cols-4 grid-rows-1">
+      <!--music div--> <div id="musicopen" draggable="true" class="invisible m-10 p-6 w-250 min-h-fit bg-[url(images/bgmusic-bigbox.jpg)] rounded-4xl shadow-2xl/60 shadow-blue-950 text-center">
+        <!--close icons--><div id="musicclose" class="grid grid-cols-2 w-fit">
+            <img src="images/close2.png" class="w-7 h-7 hover:w-8 hover:h-8">
+            <img src="images/close2-2.png" class="w-7 h-7 hover:w-8 hover:h-8">
         </div>
+        <p class="text-5xl hover:text-6xl duration-300 text-white text-shadow-sm/60 text-shadow-blue-950 underline decoration-wavy" style="font-family: hiruko;">music ♪</p>
+        <h2 class="text-3xl m-5 text-cyan-50 text-shadow-lg/60 text-shadow-blue-950 font-bold" style="font-family: regular;">i listen to wayyy too much music brah,,,</h2>        
+          <!--top 5 artists text-->
+          <button id="top5artists-click" class="block"><h2 class="duration-200 text-3xl hover:text-4xl m-3 text-pink-600 font-bold text-shadow-lg/60 text-shadow-blue-950 hover:underline decoration-wavy" style="font-family: regular;">▼ top 5 artists (not in order)</h2></button> 
+          <!--top 5 artists div-->
+          <div id="top5artists" class="hidden rounded-3xl bg-[url(images/background-music.jpg)] m-5 p-5 shadow-2xl/60 shadow-blue-950"> <!--top 5 artists div-->
+            <div id="top5artistsclose" class="grid grid-cols-2 w-fit"> <!--close window button-->
+              <img src="images/close2.png" class="w-10 h-10 hover:w-11 hover:h-11">
+              <img src="images/close2-2.png" class="w-10 h-10 hover:w-11 hover:h-11"> 
+            </div>
+            <div class="m-5 p-5 hover:shadow-xl/60 duration-200 bg-white/50 shadow-lg/50 shadow-blue-950 rounded-2xl"> <!--beabadoobee-->
+              <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/35l9BRT7MXmM8bv2WDQiyB?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <p class="text-2xl text-cyan-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">♬ beabadoobee</p>
+            </div>
+            <div class="m-5 p-5 hover:shadow-xl/60 duration-200 bg-white/50 shadow-lg/50 shadow-blue-950 rounded-2xl"> <!--regina song-->
+              <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/3Y7gOnKYWfQlEdgXag0Z6W?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">regina song 𝄞 </p>
+            </div>
+            <div class="m-5 p-5 hover:shadow-xl/60 duration-200 bg-white/50 shadow-lg/50 shadow-blue-950 rounded-2xl"> <!--kdot-->
+              <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/2YZyLoL8N0Wb9xBt1NhZWg?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <p class="text-2xl text-cyan-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">♫ kendrick lamar</p>
+            </div>
+            <div class="m-5 p-5 hover:shadow-xl/60 duration-200 bg-white/50 shadow-lg/50 shadow-blue-950 rounded-2xl"> <!--i-dle-->
+              <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/2AfmfGFbe0A0WsTYm0SDTx?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">i-dle ♪</p>
+            </div>
+            <div class="m-5 p-5 hover:shadow-xl/60 duration-200 bg-white/50 shadow-lg/50 shadow-blue-950 rounded-2xl"> <!--laufey-->
+              <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/7gW0r5CkdEUMm42w9XpyZO?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <p class="text-2xl text-cyan-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">𝄢  laufey</p>
+            </div>
+          </div>
+          <!--top 3 songs text-->
+          <button id="top3songs-click" class="block"><h2 class="duration-200 text-3xl hover:text-4xl m-3 text-pink-600 font-bold text-shadow-lg/60 text-shadow-blue-950 hover:underline decoration-wavy" style="font-family: regular;">▼ top 3 songs</h2></button>
+          <!--top 3 songs div-->
+          <div> 
+          </div>
       </div>
-      <div id="socialmedia" class="m-15 p-6 rounded-2xl">
-          
+      <div class="row-span-3 m-10 p-6 w-45"></div>
+      <div id="contactopen" draggable="true" class="hidden relative bg-[url(images/socials-bg.jpg)] w-fit h-fit m-10 -mt-30 p-6 rounded-2xl grid-cols-1 shadow-pink-600 shadow-2xl/80 [&>div]:m-3.5 [&>div]:w-30 [&>div>img]:shadow-blue-950 [&>div>img]:shadow-md [&>div>img]:rounded-3xl [&>div]:justify-self-center [&>div]:hover:w-35 [&>div]:duration-350 [&>div]:hover:underline [&>div]:hover:decoration-wavy [&>div]:decoration-pink-500 [&>div]:text-center">
+        <span id="contactclose" class="-ml-5 -mt-5 grid grid-cols-3 w-fit"> <!--buttons to close contactbox-->
+          <img src="images/close2.png" class="w-10 h-10 m-0 hover:h-11 hover:w-11">
+          <img src="images/close2-1.png" class="w-10 h-10 m-0 hover:h-11 hover:w-11">
+          <img src="images/close2-2.png" class="w-10 h-10 m-0 hover:h-11 hover:w-11">
+        </span>  
+        <div class="row-span-1">
+            <a href="mailto:katwang7749@gmail.com">  
+              <img src="images/gmail.png">
+              <p class="text-2xl text-pink-600 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">gmail</p>
+              </a>
+          </div>
+          <div class="row-span-2">
+            <a href="https://www.instagram.com/777luckykat/">
+              <img src="images/ig-spam.png">
+              <p class="text-2xl text-pink-600 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">public ig</p>
+            </a>
+            </div>
+          <div class="row-span-3">
+            <a href="https://www.instagram.com/kat.pluhh/">
+              <img src="images/ig-spam.jpg">
+              <p class="text-2xl text-pink-600 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">spam ig</p>
+            </a>
+          </div>
+          <div class="row-span-4">
+            <a href="https://github.com/ikealoverkat">
+              <img src="images/github.png">
+              <p class="text-2xl text-pink-600 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">github</p>
+            </a>
+          </div>
       </div>
+      <div class="row-span-3 m-10 p-6 w-45"></div>
+    
   </body>
 </html>
