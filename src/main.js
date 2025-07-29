@@ -54,6 +54,44 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     }); //top 5 artists x close button
 
+document.addEventListener('DOMContentLoaded', function() {
+      const toggleButton = document.getElementById('favalbums-click');
+      const myDiv = document.getElementById('favalbumsopen');
+
+      toggleButton.addEventListener('click', function() {
+        myDiv.classList.toggle('hidden');
+      });
+    }); //fav albums open/close toggle
+
+document.addEventListener('DOMContentLoaded', function() {
+      const toggleButton = document.getElementById('favalbumsclose');
+      const myDiv = document.getElementById('favalbumsopen');
+
+      toggleButton.addEventListener('click', function() {
+        myDiv.classList.toggle('hidden');
+      });
+    }); //fav albums close button
+
+document.addEventListener('DOMContentLoaded', function() {
+      const toggleButton = document.getElementById('spinning-click');
+      const myDiv = document.getElementById('spinningopen');
+
+      toggleButton.addEventListener('click', function() {
+        myDiv.classList.toggle('hidden');
+      });
+    }); //fav albums open/close toggle
+
+document.addEventListener('DOMContentLoaded', function() {
+      const toggleButton = document.getElementById('spinningclose');
+      const myDiv = document.getElementById('spinningopen');
+
+      toggleButton.addEventListener('click', function() {
+        myDiv.classList.toggle('hidden');
+      });
+    }); //fav albums close button
+
+
+
 
     // Assuming you have a div with id="myDraggable"
 const myDraggable = document.getElementById('contactopen');
