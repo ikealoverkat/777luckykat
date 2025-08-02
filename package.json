@@ -10,5 +10,8 @@
   },
   "devDependencies": {
     "vite": "^7.0.4"
+  },
+  "dependencies": {
+    "tailwind-scrollbar": "^4.0.2"
   }
 }
