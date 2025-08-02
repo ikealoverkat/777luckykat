@@ -7,8 +7,8 @@
     <title>luckykat!</title>
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body class="block content-center justify-center text-center bg-[url(images/background.jpg)] p-20">
-    <div class="bg-white w-fit h-fit p-15 rounded-4xl text-center drop-shadow-2xl drop-shadow-blue-950/75">
+  <body class="text-center items-center bg-[url(images/background.jpg)] w-7/8 mx-auto mt-15">
+    <div class="bg-white w-fit h-fit p-15 m-15 rounded-4xl text-center drop-shadow-2xl drop-shadow-blue-950/75">
         <h1 class="text-8xl text-blue-950 text-shadow-lg/30 text-shadow-blue-950" style="font-family: hiruko;">𐔌՞. .՞𐦯 luckykat☆</h1>
         <h2 class="text-2xl m-5 text-cyan-600 text-shadow-sm/60 text-shadow-blue-950 " style="font-family: hiruko;">enfp-t ♡ studco publicity ♡ vis artist ♡ web developer</h2>
         <h2 class="text-3xl m-5 text-pink-400 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">hi!! i'm <strong class="text-pink-600">kat</strong> and i luv <strong class="text-pink-300">gambling</strong> (blind boxes and gacha games), making <i>really smart financial decisions</i>, <strong class="text-pink-300">music,</strong> and <strong class="text-pink-300">tech!</strong> (but only sometimes) ♡</h2>
@@ -28,7 +28,7 @@
           </div>
           <!--contact--><button id="contacticon"><div class="row-span-4 w-40 hover: content-center hover:w-45 hover:underline hover:decoration-wavy decoration-pink-500 active:w-30 drop-shadow-white drop-shadow-xl duration-300">
           <img src="images/projects.png">
-          <p class="text-2xl text-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">contact</p>
+          <p class="text-2xl text-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">contact me</p>
           </div></button>
           <!--misc--><div class="row-span-5 w-37 content-center hover:w-42 hover:underline hover:decoration-wavy decoration-cyan-400 active:w-37 drop-shadow-white drop-shadow-xl">
           <img src="images/misc.png">
@@ -43,7 +43,7 @@
             <img src="images/close2-2.png" class="w-7 h-7 hover:w-8 hover:h-8">
         </div>
         <p class="text-5xl hover:text-6xl duration-300 text-white text-shadow-sm/60 text-shadow-blue-950 underline decoration-wavy" style="font-family: hiruko;">music ♪</p>
-        <h2 class="text-3xl m-5 text-cyan-50 text-shadow-lg/60 text-shadow-blue-950 font-bold" style="font-family: regular;">i listen to wayyy too much music brah,,,</h2>        
+        <!--stuff i listen to--><h2 class="text-3xl m-5 text-cyan-50 text-shadow-lg/60 text-shadow-blue-950 font-bold" style="font-family: regular;">i listen to wayyy too much music brah,,,</h2>        
           <!--top 5 artists text-->
           <button id="top5artists-click" class="block"><h2 class="duration-200 text-3xl hover:text-4xl m-3 text-pink-600 font-bold text-shadow-lg/60 text-shadow-blue-950 hover:underline decoration-wavy" style="font-family: regular;">▼ top 5 artists (not in order)</h2></button> 
           <!--top 5 artists div-->
@@ -73,14 +73,95 @@
               <p class="text-2xl text-cyan-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">𝄢  laufey</p>
             </div>
           </div>
-          <!--top 3 songs text-->
-          <button id="top3songs-click" class="block"><h2 class="duration-200 text-3xl hover:text-4xl m-3 text-pink-600 font-bold text-shadow-lg/60 text-shadow-blue-950 hover:underline decoration-wavy" style="font-family: regular;">▼ top 3 songs</h2></button>
-          <!--top 3 songs div-->
-          <div> 
+          <!--fav albums text-->
+          <button id="favalbums-click" class="block"><h2 class="duration-200 text-3xl hover:text-4xl m-3 text-pink-600 font-bold text-shadow-lg/60 text-shadow-blue-950 hover:underline decoration-wavy" style="font-family: regular;">▼ fav albums</h2></button>
+          <!--fav albums div-->
+          <div id="favalbumsopen" class="hidden rounded-3xl bg-[url(images/background-music.jpg)] m-5 p-5 shadow-2xl/60 shadow-blue-950">
+            <div id="favalbumsclose" class="grid grid-cols-2 w-fit"> <!--close window button-->
+              <img src="images/close2.png" class="w-10 h-10 hover:w-11 hover:h-11">
+              <img src="images/close2-2.png" class="w-10 h-10 hover:w-11 hover:h-11"> 
+            </div>
+            <!--grid with the albums-->
+            <div class="grid grid-cols-3 grid-rows-3 m-2 p-2 [&>div]:m-2 [&>div]:p-5 [&>div>img]:rounded-xl [&>div]:shadow-blue-950 [&>div]:shadow-lg/50 [&>div]:rounded-xl [&>div]:bg-white [&>div]:hover:shadow-lg/75 [&>div]:duration-200 [&>div>img]:shadow-lg/50 [&>div>img]: shadow-blue-950 [&>div>img]:hover:shadow-lg/75 [&>div>img]:duration-200 [&>div>p]:m-3">
+              <div>
+                <img src="images/album-beatopia.png">
+                <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> Beatopia </p>
+                <p class="text-xl text-pink-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-pink-300 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> beabadoobee </p>
+              </div>
+              <div>
+                <img src="images/album-damn.png">
+                <p class="text-2xl text-cyan-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">DAMN<strong style="font-family:hiruko;">.</strong></p>
+                <p class="text-xl text-cyan-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-cyan-200 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> Kendrick Lamar </p>
+              </div>
+              <div>
+                <img src="images/album-two.png">
+                <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> 2 </p>
+                <p class="text-xl text-pink-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-pink-300 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> i-dle </p>
+              </div>
+              <div>
+                <img src="images/album-eics.png">
+                <p class="text-2xl text-cyan-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">EICS: fwd</p>
+                <p class="text-xl text-cyan-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-cyan-200 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">Sabrina Carpenter</p>
+              </div>
+              <div>
+                <img src="images/album-mmatbs.png">
+                <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">MMATBS</p>
+                <p class="text-xl text-pink-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-pink-300 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> Kendrick Lamar </p>
+              </div>
+              <div>
+                <img src="images/album-fangirl.jpg">
+                <p class="text-2xl text-cyan-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">fangirl</p>
+                <p class="text-xl text-cyan-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-cyan-200 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> Regina Song </p>
+              </div>
+              <div>
+                <img src="images/album-ineverdie.jpg">
+                <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> I NEVER DIE </p>
+                <p class="text-xl text-pink-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-pink-300 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> i-dle </p>
+              </div>
+              <div>
+                <img src="images/album-shortnsweetdel.jpg">
+                <p class="text-2xl text-cyan-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">Short & Sweet</p>
+                <p class="text-xl text-cyan-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-cyan-200 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> beabadoobee </p>
+              </div>
+              <div>
+                <img src="images/album-tihtm.png">
+                <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> TIHTM </p>
+                <p class="text-xl text-pink-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-pink-300 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> beabadoobee </p>
+              </div>
+            </div>
           </div>
+          <!--spinning albums div-->
+          <button id="spinning-click" class="block"><h2 class="duration-200 text-3xl hover:text-4xl m-3 text-pink-600 font-bold text-shadow-lg/60 text-shadow-blue-950 hover:underline decoration-wavy" style="font-family: regular;">▼ click me (angela told me to put this)</h2></button>
+          <div id="spinningopen" class="hidden rounded-3xl bg-[url(images/background-music.jpg)] m-5 p-5 shadow-2xl/60 shadow-blue-950">
+            <div id="spinningclose" class="grid grid-cols-2 w-fit"> <!--close window button-->
+              <img src="images/close2.png" class="w-10 h-10 hover:w-11 hover:h-11">
+              <img src="images/close2-2.png" class="w-10 h-10 hover:w-11 hover:h-11"> 
+            </div>
+            <p class="duration-200 text-3xl hover:text-4xl m-5 -mt-1 text-cyan-500 font-bold text-shadow-lg/60 text-shadow-blue-950 hover:underline decoration-wavy" style="font-family: regular;">look the albums spin when you hover on them</p>
+            <!--grid of the 3 spinning albums-->
+            <div class="grid grid-cols-3 [&>div>img]:hover:shadow-lg/65 [&>div>img]:hover:animate-[slowspin_4s_linear_infinite] [&>div>img]:hover:shadow-blue-950 [&>div>img]:rounded-full">
+              <div>
+                <img src="images/spin-bewitched.png" class="duration-1000">
+                <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> Bewitched </p>
+                <p class="text-xl text-pink-400 hover:underline hover:text-2xl decoration-wavy decoration-pink-300 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> Laufey </p>
+              </div>
+              <div>
+                <img src="images/spin-rosie.png">
+                <p class="text-2xl text-cyan-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">rosie</p>
+                <p class="text-xl text-cyan-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-cyan-200 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> ROSÉ </p>
+              </div>
+              <div>
+                <img src="images/spin-typicalofme.png">
+                <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> Typical of Me </p>
+                <p class="text-xl text-pink-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-pink-300 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> Laufey </p>
+              </div>
+            </div>
+          </div>
+          <!--instruments/music i make text--> <h2 class="text-3xl m-5 text-cyan-50 text-shadow-lg/60 text-shadow-blue-950 font-bold" style="font-family: regular;">surprise surprise i also make music except im lowkey incompetent #droppedoutofmyhighschoolmusiceducation! no releases btw i just play stuff for fun</h2>
+        
       </div>
       <div class="row-span-3 m-10 p-6 w-45"></div>
-      <div id="contactopen" draggable="true" class="hidden relative bg-[url(images/socials-bg.jpg)] w-fit h-fit m-10 -mt-30 p-6 rounded-2xl grid-cols-1 shadow-pink-600 shadow-2xl/80 [&>div]:m-3.5 [&>div]:w-30 [&>div>img]:shadow-blue-950 [&>div>img]:shadow-md [&>div>img]:rounded-3xl [&>div]:justify-self-center [&>div]:hover:w-35 [&>div]:duration-350 [&>div]:hover:underline [&>div]:hover:decoration-wavy [&>div]:decoration-pink-500 [&>div]:text-center">
+      <!--contact div--> <div id="contactopen" draggable="true" class="hidden relative bg-[url(images/socials-bg.jpg)] w-fit h-fit m-10 -mt-30 p-6 rounded-2xl grid-cols-1 shadow-pink-600 shadow-2xl/80 [&>div]:m-3.5 [&>div]:w-30 [&>div>img]:shadow-blue-950 [&>div>img]:shadow-md [&>div>img]:rounded-3xl [&>div]:justify-self-center [&>div]:hover:w-35 [&>div]:duration-350 [&>div]:hover:underline [&>div]:hover:decoration-wavy [&>div]:decoration-pink-500 [&>div]:text-center">
         <span id="contactclose" class="-ml-5 -mt-5 grid grid-cols-3 w-fit"> <!--buttons to close contactbox-->
           <img src="images/close2.png" class="w-10 h-10 m-0 hover:h-11 hover:w-11">
           <img src="images/close2-1.png" class="w-10 h-10 m-0 hover:h-11 hover:w-11">
