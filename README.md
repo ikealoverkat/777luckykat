@@ -9,3 +9,5 @@ i used Visual Studio Code as my editor, and used HTML/CSS + JS to code my websit
 ### notes/disclaimers for visitors!!
 - disclaimer: it takes a while to load
 - this website is made to work on desktop/laptop/tablet so if you're viewing on mobile it might be a bit janky, worked pretty hard on it though so enjoy ^^
+- i submitted this website for Hack Club's Athena Award!! it's an award providing a NYC trip + award recognized by universities to teen girls + genderqueer teens and Hack Club is a 501(c)(3) nonprofit that provides tech opportunities to teens :D go check out Hack Club + the Athena Award by clicking this badge<3
+- [![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
