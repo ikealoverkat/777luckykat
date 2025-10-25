@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="src/images/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>luckykat!</title>
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body class="text-center justify-center items-center bg-[url(images/background.jpg)] w-7/8 mx-auto mt-15">
+  <body class="text-center justify-center items-center bg-[url(src/images/background.jpg)] w-7/8 mx-auto mt-15">
     <!-- mobile popup -->
     <div id="warning" class="bg-pink-50 sm:block md:block lg:hidden  absolute z-10 w-fit h-fit max-w-screen max-h-screen p-15 m-15 rounded-4xl text-center drop-shadow-2xl drop-shadow-blue-950/75">
       <p class="text-3xl m-2 text-pink-500 text-shadow-xs text-shadow-blue-950/65" style="font-family: hiruko;">mobile warning!</p>
@@ -28,128 +28,128 @@
         <h2 class="text-2xl m-5 text-pink-400 text-shadow-sm/60 text-shadow-blue-950 underline" style="font-family: regular;">note: the windows that open when you click on the items are draggable!<br> note 2: this website looks better if you zoom out a bit lmao</h2>
         <div class="bg-gradient-to-b from-pink-50 via-pink-150 from 50% via-pink-500 from 51% to-pink-350 rounded-3xl m-15 flex justify-items-center justify-center h-50 items-center p-7 [&>div]:duration-350">
           <!--art--><div id="articon" class="hoverable row-span-1 w-45 active:w-40 content-center hover:w-50 hover:underline decoration-wavy decoration-cyan-400 drop-shadow-white drop-shadow-xl">
-          <img src="images/art.png">
+          <img src="src/images/art.png">
           <p class="text-2xl text-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">art</p>
           </div>
           <!--projects--><div id="projectsicon" class="hoverable row-span-2 w-45 content-center hover:w-50 hover:underline hover:decoration-wavy decoration-pink-500 active:w-40 drop-shadow-white drop-shadow-xl">
-          <img src="images/files.png">
+          <img src="src/images/files.png">
           <p class="text-2xl text-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">projects</p>
           </div>
           <!--music--><div id="musicicon" class="hoverable row-span-3 w-45 content-center hover:w-50 hover:underline hover:decoration-wavy decoration-cyan-400 active:w-35 drop-shadow-white drop-shadow-xl">
-          <img src="images/music.png">
+          <img src="src/images/music.png">
           <p class="text-2xl text-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">music</p>
           </div>
           <!--contact--><button id="contacticon"><div class="hoverable row-span-4 w-40 hover: content-center hover:w-45 hover:underline hover:decoration-wavy decoration-pink-500 active:w-30 drop-shadow-white drop-shadow-xl duration-300">
-          <img src="images/projects.png">
+          <img src="src/images/projects.png">
           <p class="text-2xl text-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">contact me</p>
           </div></button>
           <!--misc--><div id="miscicon" class="hoverable row-span-5 w-37 content-center hover:w-42 hover:underline hover:decoration-wavy decoration-cyan-400 active:w-37 drop-shadow-white drop-shadow-xl">
-          <img src="images/misc.png">
+          <img src="src/images/misc.png">
           <p class="text-2xl text-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">misc.</p>
           </div>
       </div>
     </div>  
     <!--art div-->
-    <div id="artopen" style="top: 200px; left:200px;" class="bg-[url(images/bgart-bigbox.jpg)] draggable hidden absolute m-10 p-6 overflow-x-hidden overflow-y-scroll w-300 h-250 custom-scroll rounded-4xl shadow-2xl/60 shadow-blue-900 text-center">
+    <div id="artopen" style="top: 200px; left:200px;" class="bg-[url(src/images/bgart-bigbox.jpg)] draggable hidden absolute m-10 p-6 overflow-x-hidden overflow-y-scroll w-300 h-250 custom-scroll rounded-4xl shadow-2xl/60 shadow-blue-900 text-center">
       <!--close icons--><div id="artclose" class="grid grid-cols-2 w-fit">
-          <img src="images/close2.png" class="w-10 h-10 hover:w-11 hover:h-11 toolshover">
-          <img src="images/close2-2.png" class="w-10 h-10 hover:w-11 hover:h-11 toolshover">
+          <img src="src/images/close2.png" class="w-10 h-10 hover:w-11 hover:h-11 toolshover">
+          <img src="src/images/close2-2.png" class="w-10 h-10 hover:w-11 hover:h-11 toolshover">
       </div>
       <p class="text-5xl hover:text-6xl m-2 duration-300 text-pink-600 text-shadow-sm/60 text-shadow-blue-950 underline decoration-wavy" style="font-family: hiruko;">art! ♡</p>        
       <h2 class="text-3xl m-5 text-cyan-900 text-shadow-sm/60 text-shadow-blue-950 font-bold" style="font-family: regular;">art is like the only hobby i've been consistent with LOL <br> i decided to put my old art on here even though some of it is horrendous,,, the gallery is in chronological order so prepare to be jumpscared</h2>
       <!--favs gallery-->
       <p class="text-pink-400 text-4xl text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">favs</p>
       <div class="place-content-center flex flex-wrap p-3 mt-2 m-6 rounded-2xl bg-white/75 shadow-xl/65 shadow-blue-950 [&>div]:m-2 [&>div]:rounded-2xl [&>div>img]:object-cover [&>div]:overflow-hidden [&>div]:w-75 [&>div]:h-75 [&>div]:transition-all [&>div]:duration-300 [&>div]:shadow-blue-950 [&>div]:shadow-lg/65 [&>div]:hover:shadow-blue-950 [&>div]:hover:shadow-xl">
-        <div class="hover:h-100"><img src="images/art/favs-1.png" class="w-75 h-100"></div>
-        <div><img src="images/art/favs-3.png" class="w-75"></div>
-        <div class="hover:w-100"><img src="images/art/favs-2.png" class="w-100 h-75 rounded-2xl"></div>
-        <div class="hover:w-100"><img src="images/art/favs-4.png" class="w-100 h-75 rounded-2xl"></div>
-        <div><img src="images/art/favs-6.png" class="w-75"></div>
-        <div class="hover:h-87"><img src="images/art/favs-5.png" class="w-75"></div>
+        <div class="hover:h-100"><img src="src/images/art/favs-1.png" class="w-75 h-100"></div>
+        <div><img src="src/images/art/favs-3.png" class="w-75"></div>
+        <div class="hover:w-100"><img src="src/images/art/favs-2.png" class="w-100 h-75 rounded-2xl"></div>
+        <div class="hover:w-100"><img src="src/images/art/favs-4.png" class="w-100 h-75 rounded-2xl"></div>
+        <div><img src="src/images/art/favs-6.png" class="w-75"></div>
+        <div class="hover:h-87"><img src="src/images/art/favs-5.png" class="w-75"></div>
       </div>
       <!-- 2022 -->
       <p id="2022-click" class="text-pink-400 hover:underline decoration-wavy text-4xl text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">▼ 2022 (yikes)</p>
       <div id="2022-open" class="hidden place-content-center flex-wrap p-3 mt-2 m-6 rounded-2xl bg-white/75 shadow-xl/65 shadow-blue-950 [&>div]:m-2 [&>div]:rounded-2xl [&>div>img]:object-cover [&>div]:overflow-hidden [&>div]:w-75 [&>div]:h-75 [&>div]:transition-all [&>div]:duration-300 [&>div]:shadow-blue-950 [&>div]:shadow-lg/65 [&>div]:hover:shadow-blue-950 [&>div]:hover:shadow-xl">
-        <div><img src="images/art/2022-0.png" class="w-75 h-75"></div>
-        <div class="hover:h-85"><img src="images/art/2022-1.jpg" class="w-75"></div>
-        <div class="hover:h-100"><img src="images/art/2022-3.png" class="w-75 h-100 rounded-2xl"></div>
-        <div class="hover:h-100"><img src="images/art/2022-4.png" class="w-75 h-100 rounded-2xl"></div>
-        <div class="hover:h-100"><img src="images/art/2022-5.png" class="w-75 h-100 rounded-2xl"></div>
-        <div class="hover:h-87"><img src="images/art/2022-6.jpg" class="w-75"></div>
-        <div class="hover:h-120"><img src="images/art/2022-7.png" class="w-75 h-120"></div>
+        <div><img src="src/images/art/2022-0.png" class="w-75 h-75"></div>
+        <div class="hover:h-85"><img src="src/images/art/2022-1.jpg" class="w-75"></div>
+        <div class="hover:h-100"><img src="src/images/art/2022-3.png" class="w-75 h-100 rounded-2xl"></div>
+        <div class="hover:h-100"><img src="src/images/art/2022-4.png" class="w-75 h-100 rounded-2xl"></div>
+        <div class="hover:h-100"><img src="src/images/art/2022-5.png" class="w-75 h-100 rounded-2xl"></div>
+        <div class="hover:h-87"><img src="src/images/art/2022-6.jpg" class="w-75"></div>
+        <div class="hover:h-120"><img src="src/images/art/2022-7.png" class="w-75 h-120"></div>
       </div>
       <!-- 2023 -->
       <p id="2023-click" class="text-pink-400 hover:underline decoration-wavy text-4xl text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">▼ 2023 (holy improvement)</p>
       <div id="2023-open" class="hidden place-content-center flex-wrap p-3 mt-2 m-6 rounded-2xl bg-white/75 shadow-xl/65 shadow-blue-950 [&>div]:m-2 [&>div]:rounded-2xl [&>div>img]:object-cover [&>div]:overflow-hidden [&>div]:w-75 [&>div]:h-75 [&>div]:transition-all [&>div]:duration-300 [&>div]:shadow-blue-950 [&>div]:shadow-lg/65 [&>div]:hover:shadow-blue-950 [&>div]:hover:shadow-xl">
-        <div class="hover:w-100"><img src="images/art/2023-1.jpg" class="w-100 h-75"></div>
-        <div class="hover:w-100"><img src="images/art/2023-2.png" class="w-100 h-75"></div>
-        <div><img src="images/art/2023-3.png" class="w-75 h-75 rounded-2xl"></div>
-        <div><img src="images/art/2023-4.png" class="w-75 h-75 rounded-2xl"></div>
-        <div><img src="images/art/2023-5.png" class="w-75 h-75 rounded-2xl"></div>
-        <div><img src="images/art/2023-6.png" class="w-75 h-75 rounded-2xl"></div>
-        <div class="hover:h-87"><img src="images/art/2023-7.png" class="w-75 h-87"></div>
-        <div class="hover:h-87"><img src="images/art/2023-8.png" class="w-80 h-87"></div>
-        <div><img src="images/art/2023-9.png" class="w-75"></div>
-        <div class="hover:w-90"><img src="images/art/2023-10.png" class="w-90 h-75"></div>
-        <div><img src="images/art/2023-12.png" class="w-75"></div>
-        <div class="hover:h-100"><img src="images/art/2023-13.png" class="w-75 h-100"></div>
-        <div class="hover:h-90"><img src="images/art/2023-14.png" class="w-75 h-90"></div>
-        <div class="hover:w-120"><img src="images/art/2023-15.png" class="w-120 h-75"></div>
-        <div><img src="images/art/2023-16.png" class="w-75"></div>
-        <div class="hover:h-120"><img src="images/art/2023-17.png" class="w-75 h-120"></div> 
-        <div class="hover:h-90"><img src="images/art/2023-18.jpg" class="w-75 h-90"></div>
+        <div class="hover:w-100"><img src="src/images/art/2023-1.jpg" class="w-100 h-75"></div>
+        <div class="hover:w-100"><img src="src/images/art/2023-2.png" class="w-100 h-75"></div>
+        <div><img src="src/images/art/2023-3.png" class="w-75 h-75 rounded-2xl"></div>
+        <div><img src="src/images/art/2023-4.png" class="w-75 h-75 rounded-2xl"></div>
+        <div><img src="src/images/art/2023-5.png" class="w-75 h-75 rounded-2xl"></div>
+        <div><img src="src/images/art/2023-6.png" class="w-75 h-75 rounded-2xl"></div>
+        <div class="hover:h-87"><img src="src/images/art/2023-7.png" class="w-75 h-87"></div>
+        <div class="hover:h-87"><img src="src/images/art/2023-8.png" class="w-80 h-87"></div>
+        <div><img src="src/images/art/2023-9.png" class="w-75"></div>
+        <div class="hover:w-90"><img src="src/images/art/2023-10.png" class="w-90 h-75"></div>
+        <div><img src="src/images/art/2023-12.png" class="w-75"></div>
+        <div class="hover:h-100"><img src="src/images/art/2023-13.png" class="w-75 h-100"></div>
+        <div class="hover:h-90"><img src="src/images/art/2023-14.png" class="w-75 h-90"></div>
+        <div class="hover:w-120"><img src="src/images/art/2023-15.png" class="w-120 h-75"></div>
+        <div><img src="src/images/art/2023-16.png" class="w-75"></div>
+        <div class="hover:h-120"><img src="src/images/art/2023-17.png" class="w-75 h-120"></div> 
+        <div class="hover:h-90"><img src="src/images/art/2023-18.jpg" class="w-75 h-90"></div>
       </div>
       <!-- 2024 -->
       <p id="2024-click" class="text-pink-400 hover:underline decoration-wavy text-4xl text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">▼ 2024</p>
       <div id="2024-open" class="place-content-center hidden flex-wrap p-3 mt-2 m-6 rounded-2xl bg-white/75 shadow-xl/65 shadow-blue-950 [&>div]:m-2 [&>div]:rounded-2xl [&>div>img]:object-cover [&>div]:overflow-hidden [&>div]:w-75 [&>div]:h-75 [&>div]:transition-all [&>div]:duration-300 [&>div]:shadow-blue-950 [&>div]:shadow-lg/65 [&>div]:hover:shadow-blue-950 [&>div]:hover:shadow-xl">
-        <div class="hover:h-110"><img src="images/art/2024-1.png" class="w-75 h-110 rounded-2xl"></div>
-        <div class="hover:h-140"><img src="images/art/2024-2.png" class="w-75 h-140 rounded-2xl"></div>
-        <div class="hover:h-110"><img src="images/art/2024-3.png" class="w-75 h-110 rounded-2xl"></div>
-        <div><img src="images/art/2024-4.png" class="w-75 h-75 rounded-2xl"></div>
-        <div class="hover:w-120"><img src="images/art/2024-5.png" class="w-120 h-75 rounded-2xl"></div>
-        <div class="hover:h-100"><img src="images/art/2024-6.png" class="w-75 h-100 rounded-2xl"></div>
-        <div><img src="images/art/2024-7.png" class="w-75 h-75 rounded-2xl"></div>
-        <div><img src="images/art/2024-8.jpg" class="w-75 h-75 rounded-2xl"></div>
-        <div class="hover:w-100"><img src="images/art/2024-9.png" class="w-100 h-75 rounded-2xl"></div>
+        <div class="hover:h-110"><img src="src/images/art/2024-1.png" class="w-75 h-110 rounded-2xl"></div>
+        <div class="hover:h-140"><img src="src/images/art/2024-2.png" class="w-75 h-140 rounded-2xl"></div>
+        <div class="hover:h-110"><img src="src/images/art/2024-3.png" class="w-75 h-110 rounded-2xl"></div>
+        <div><img src="src/images/art/2024-4.png" class="w-75 h-75 rounded-2xl"></div>
+        <div class="hover:w-120"><img src="src/images/art/2024-5.png" class="w-120 h-75 rounded-2xl"></div>
+        <div class="hover:h-100"><img src="src/images/art/2024-6.png" class="w-75 h-100 rounded-2xl"></div>
+        <div><img src="src/images/art/2024-7.png" class="w-75 h-75 rounded-2xl"></div>
+        <div><img src="src/images/art/2024-8.jpg" class="w-75 h-75 rounded-2xl"></div>
+        <div class="hover:w-100"><img src="src/images/art/2024-9.png" class="w-100 h-75 rounded-2xl"></div>
       </div>
       <!-- 2025 -->
       <p id="2025-click" class="text-pink-400 hover:underline decoration-wavy text-4xl text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">▼ 2025</p>
       <div id="2025-open" class="place-content-center hidden flex-wrap p-3 mt-2 m-6 rounded-2xl bg-white/75 shadow-xl/65 shadow-blue-950 [&>div]:m-2 [&>div]:rounded-2xl [&>div>img]:object-cover [&>div]:overflow-hidden [&>div]:w-75 [&>div]:h-75 [&>div]:transition-all [&>div]:duration-300 [&>div]:shadow-blue-950 [&>div]:shadow-lg/65 [&>div]:hover:shadow-blue-950 [&>div]:hover:shadow-xl">
-        <div class="hover:h-100"><img src="images/art/2025-0.png" class="w-75 h-100 rounded-2xl"></div>
-        <div class="hover:w-100"><img src="images/art/2025-1.png" class="w-100 h-75 rounded-2xl"></div>
-        <div class="hover:h-100"><img src="images/art/2025-2.png" class="w-75 h-100 rounded-2xl"></div>
+        <div class="hover:h-100"><img src="src/images/art/2025-0.png" class="w-75 h-100 rounded-2xl"></div>
+        <div class="hover:w-100"><img src="src/images/art/2025-1.png" class="w-100 h-75 rounded-2xl"></div>
+        <div class="hover:h-100"><img src="src/images/art/2025-2.png" class="w-75 h-100 rounded-2xl"></div>
         
-        <div class="hover:w-90"><img src="images/art/2025-3.png" class="w-90 h-75 rounded-2xl"></div>
-        <div class="hover:w-90"><img src="images/art/2025-4.png" class="w-90 h-75 rounded-2xl"></div>
-        <div class="hover:w-90"><img src="images/art/2025-5.png" class="w-90 h-75 rounded-2xl"></div>
+        <div class="hover:w-90"><img src="src/images/art/2025-3.png" class="w-90 h-75 rounded-2xl"></div>
+        <div class="hover:w-90"><img src="src/images/art/2025-4.png" class="w-90 h-75 rounded-2xl"></div>
+        <div class="hover:w-90"><img src="src/images/art/2025-5.png" class="w-90 h-75 rounded-2xl"></div>
         
-        <div><img src="images/art/2025-6.png" class="w-75 h-75 rounded-2xl"></div>
-        <div><img src="images/art/2025-7.png" class="w-75 h-75 rounded-2xl"></div>
-        <div id="annc" class="hover:w-100"><img src="images/art/2025-8.png" class="w-150 h-75 rounded-2xl"></div>
+        <div><img src="src/images/art/2025-6.png" class="w-75 h-75 rounded-2xl"></div>
+        <div><img src="src/images/art/2025-7.png" class="w-75 h-75 rounded-2xl"></div>
+        <div id="annc" class="hover:w-100"><img src="src/images/art/2025-8.png" class="w-150 h-75 rounded-2xl"></div>
         
-        <div class="hover:w-100"><img src="images/art/2025-9.png" class="w-100 h-75 rounded-2xl"></div>
-        <div><img src="images/art/2025-10.png" class="w-75 h-75 rounded-2xl"></div>
-        <div class="hover:h-80"><img src="images/art/2025-11.png" class="w-75 h-80 rounded-2xl"></div>
+        <div class="hover:w-100"><img src="src/images/art/2025-9.png" class="w-100 h-75 rounded-2xl"></div>
+        <div><img src="src/images/art/2025-10.png" class="w-75 h-75 rounded-2xl"></div>
+        <div class="hover:h-80"><img src="src/images/art/2025-11.png" class="w-75 h-80 rounded-2xl"></div>
         
-        <div class=""><img src="images/art/2025-12.jpg" class="w-75 h-75 rounded-2xl"></div>
-        <div class="hover:h-120"><img src="images/art/2025-13.jpg" class="w-75 h-120 rounded-2xl"></div>
+        <div class=""><img src="src/images/art/2025-12.jpg" class="w-75 h-75 rounded-2xl"></div>
+        <div class="hover:h-120"><img src="src/images/art/2025-13.jpg" class="w-75 h-120 rounded-2xl"></div>
       </div>
     </div>
     <!--music div-->
-    <div id="musicopen" class="custom-scroll draggable absolute invisible overflow-x-hidden overflow-y-scroll m-10 z-1 -mt-25 p-6 w-250 h-250 bg-[url(images/bgmusic-bigbox.jpg)] rounded-4xl shadow-2xl/60 shadow-blue-950 text-center">
+    <div id="musicopen" class="custom-scroll draggable absolute invisible overflow-x-hidden overflow-y-scroll m-10 z-1 -mt-25 p-6 w-250 h-250 bg-[url(src/images/bgmusic-bigbox.jpg)] rounded-4xl shadow-2xl/60 shadow-blue-950 text-center">
       <!--close icons--><div id="musicclose" class="grid grid-cols-2 w-fit">
-          <img src="images/close2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover">
-          <img src="images/close2-2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover">
+          <img src="src/images/close2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover">
+          <img src="src/images/close2-2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover">
       </div>
       <p class="text-5xl hover:text-6xl duration-300 text-white text-shadow-sm/60 text-shadow-blue-950 underline decoration-wavy" style="font-family: hiruko;">music ♪</p>
       <!--stuff i listen to--><h2 class="text-3xl m-5 text-cyan-50 text-shadow-lg/60 text-shadow-blue-950 font-bold" style="font-family: regular;">i listen to wayyy too much music brah,,,</h2>        
         <!--top 5 artists text-->
         <button id="top5artists-click" class="block"><h2 class="duration-200 text-3xl hover:text-4xl m-3 text-pink-600 font-bold text-shadow-lg/60 text-shadow-blue-950 hover:underline decoration-wavy" style="font-family: regular;">▼ top 5 artists (not in order)</h2></button> 
         <!--top 5 artists div-->
-        <div id="top5artists" class="hidden rounded-3xl bg-[url(images/background-music.jpg)] m-5 p-5 shadow-2xl/60 shadow-blue-950"> <!--top 5 artists div-->
+        <div id="top5artists" class="hidden rounded-3xl bg-[url(./src/images/background-music.jpg)] m-5 p-5 shadow-2xl/60 shadow-blue-950"> <!--top 5 artists div-->
           <div id="top5artistsclose" class="grid grid-cols-2 w-fit"> <!--close window button-->
-            <img src="images/close2.png" class="w-10 h-10 hover:w-11 hover:h-11 toolshover">
-            <img src="images/close2-2.png" class="w-10 h-10 hover:w-11 hover:h-11 toolshover"> 
+            <img src="src/images/close2.png" class="w-10 h-10 hover:w-11 hover:h-11 toolshover">
+            <img src="src/images/close2-2.png" class="w-10 h-10 hover:w-11 hover:h-11 toolshover"> 
           </div>
           <div class="m-5 p-5 hover:shadow-xl/60 duration-200 bg-white/50 shadow-lg/50 shadow-blue-950 rounded-2xl"> <!--beabadoobee-->
             <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/artist/35l9BRT7MXmM8bv2WDQiyB?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
@@ -175,55 +175,55 @@
         <!--fav albums text-->
         <button id="favalbums-click" class="block"><h2 class="duration-200 text-3xl hover:text-4xl m-3 text-pink-600 font-bold text-shadow-lg/60 text-shadow-blue-950 hover:underline decoration-wavy" style="font-family: regular;">▼ fav albums</h2></button>
         <!--fav albums div-->
-        <div id="favalbumsopen" class="hidden rounded-3xl bg-[url(images/background-music.jpg)] m-5 p-5 shadow-2xl/60 shadow-blue-950">
+        <div id="favalbumsopen" class="hidden rounded-3xl bg-[url(src/images/background-music.jpg)] m-5 p-5 shadow-2xl/60 shadow-blue-950">
           <div id="favalbumsclose" class="grid grid-cols-2 w-fit"> <!--close window button-->
-            <img src="images/close2.png" class="w-10 h-10 hover:w-11 hover:h-11 toolshover">
-            <img src="images/close2-2.png" class="w-10 h-10 hover:w-11 hover:h-11 toolshover"> 
+            <img src="src/images/close2.png" class="w-10 h-10 hover:w-11 hover:h-11 toolshover">
+            <img src="src/images/close2-2.png" class="w-10 h-10 hover:w-11 hover:h-11 toolshover"> 
           </div>
           <!--grid with the albums-->
           <div class="grid grid-cols-3 grid-rows-3 m-2 p-2 [&>div]:m-2 [&>div]:p-5 [&>div>img]:rounded-xl [&>div]:shadow-blue-950 [&>div]:shadow-lg/50 [&>div]:rounded-xl [&>div]:bg-white [&>div]:hover:shadow-lg/75 [&>div]:duration-200 [&>div>img]:shadow-lg/50 [&>div>img]: shadow-blue-950 [&>div>img]:hover:shadow-lg/75 [&>div>img]:duration-200 [&>div>p]:m-3">
             <div>
-              <img src="images/album-beatopia.png">
+              <img src="src/images/album-beatopia.png">
               <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> Beatopia </p>
               <p class="text-xl text-pink-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-pink-300 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> beabadoobee </p>
             </div>
             <div>
-              <img src="images/album-damn.png">
+              <img src="src/images/album-damn.png">
               <p class="text-2xl text-cyan-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">DAMN<strong style="font-family:hiruko;">.</strong></p>
               <p class="text-xl text-cyan-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-cyan-200 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> Kendrick Lamar </p>
             </div>
             <div>
-              <img src="images/album-two.png">
+              <img src="src/images/album-two.png">
               <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> 2 </p>
               <p class="text-xl text-pink-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-pink-300 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> i-dle </p>
             </div>
             <div>
-              <img src="images/album-eics.png">
+              <img src="src/images/album-eics.png">
               <p class="text-2xl text-cyan-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">EICS: fwd</p>
               <p class="text-xl text-cyan-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-cyan-200 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">Sabrina Carpenter</p>
             </div>
             <div>
-              <img src="images/album-mmatbs.png">
+              <img src="src/images/album-mmatbs.png">
               <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">MMATBS</p>
               <p class="text-xl text-pink-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-pink-300 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> Kendrick Lamar </p>
             </div>
             <div>
-              <img src="images/album-fangirl.jpg">
+              <img src="src/images/album-fangirl.jpg">
               <p class="text-2xl text-cyan-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">fangirl</p>
               <p class="text-xl text-cyan-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-cyan-200 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> Regina Song </p>
             </div>
             <div>
-              <img src="images/album-ineverdie.jpg">
+              <img src="src/images/album-ineverdie.jpg">
               <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> I NEVER DIE </p>
               <p class="text-xl text-pink-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-pink-300 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> i-dle </p>
             </div>
             <div>
-              <img src="images/album-shortnsweetdel.jpg">
+              <img src="src/images/album-shortnsweetdel.jpg">
               <p class="text-2xl text-cyan-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">Short & Sweet</p>
               <p class="text-xl text-cyan-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-cyan-200 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> beabadoobee </p>
             </div>
             <div>
-              <img src="images/album-tihtm.png">
+              <img src="src/images/album-tihtm.png">
               <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> TIHTM </p>
               <p class="text-xl text-pink-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-pink-300 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> beabadoobee </p>
             </div>
@@ -231,26 +231,26 @@
         </div>
         <!--spinning albums div-->
         <button id="spinning-click" class="block"><h2 class="duration-200 text-3xl hover:text-4xl m-3 text-pink-600 font-bold text-shadow-lg/60 text-shadow-blue-950 hover:underline decoration-wavy" style="font-family: regular;">▼ more albums (angela told me to put this)</h2></button>
-        <div id="spinningopen" class="hidden rounded-3xl bg-[url(images/background-music.jpg)] m-5 p-5 shadow-2xl/60 shadow-blue-950">
+        <div id="spinningopen" class="hidden rounded-3xl bg-[url(src/images/background-music.jpg)] m-5 p-5 shadow-2xl/60 shadow-blue-950">
           <div id="spinningclose" class="grid grid-cols-2 w-fit"> <!--close window button-->
-            <img src="images/close2.png" class="w-10 h-10 hover:w-11 hover:h-11 toolshover">
-            <img src="images/close2-2.png" class="w-10 h-10 hover:w-11 hover:h-11 toolshover"> 
+            <img src="src/images/close2.png" class="w-10 h-10 hover:w-11 hover:h-11 toolshover">
+            <img src="src/images/close2-2.png" class="w-10 h-10 hover:w-11 hover:h-11 toolshover"> 
           </div>
           <p class="duration-200 text-3xl hover:text-4xl m-5 -mt-1 text-cyan-500 font-bold text-shadow-lg/60 text-shadow-blue-950 hover:underline decoration-wavy" style="font-family: regular;">look the albums spin when you hover on them</p>
           <!--grid of the 3 spinning albums-->
           <div class="grid grid-cols-3 [&>div>img]:hover:shadow-lg/65 [&>div>img]:hover:animate-[slowspin_4s_linear_infinite] [&>div>img]:hover:shadow-blue-950 [&>div>img]:rounded-full">
             <div>
-              <img src="images/spin-bewitched.png" class="duration-1000">
+              <img src="src/images/spin-bewitched.png" class="duration-1000">
               <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> Bewitched </p>
               <p class="text-xl text-pink-400 hover:underline hover:text-2xl decoration-wavy decoration-pink-300 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> Laufey </p>
             </div>
             <div>
-              <img src="images/spin-rosie.png">
+              <img src="src/images/spin-rosie.png">
               <p class="text-2xl text-cyan-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-cyan-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">rosie</p>
               <p class="text-xl text-cyan-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-cyan-200 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> ROSÉ </p>
             </div>
             <div>
-              <img src="images/spin-typicalofme.png">
+              <img src="src/images/spin-typicalofme.png">
               <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> Typical of Me </p>
               <p class="text-xl text-pink-400 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-pink-300 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> Laufey </p>
             </div>
@@ -262,19 +262,19 @@
         <!--3 instrument icons-->
         <div class="grid grid-cols-3 [&>div>img]:drop-shadow-white [&>div>img]:drop-shadow-xl/75 [&>div>img]:hover:drop-shadow-2xl [&>div>img]:hover:drop-shadow-white">
           <div id="singingyap-icon" class="toolshover"> <!--singing icon div-->
-            <img src="images/instrument-mic.png" class="w-50 hover:w-55 active:w-45 duration-500">
+            <img src="src/images/instrument-mic.png" class="w-50 hover:w-55 active:w-45 duration-500">
             <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;"> singing</p>
             <p class="text-xl text-pink-100 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-pink-50 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">does this count as an instrument?</p>
             <p class="text-xl text-cyan-50 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-cyan-100 active:text-cyan-200 text-shadow-sm/60 text-shadow-blue-950" style="font-family: hiruko;">▼ click for yap</p>
           </div>
           <div id="clarinetyap-icon" class="toolshover"> <!--clarinet icon div-->
-            <img src="images/instrument-clarinet.png" class="w-60 hover:w-65 active:w-50 duration-500">
+            <img src="src/images/instrument-clarinet.png" class="w-60 hover:w-65 active:w-50 duration-500">
             <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">clarinet</p>
             <p class="text-xl text-pink-100 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-pink-50 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">squidward</p>
             <p class="text-xl text-cyan-50 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-cyan-100 active:text-cyan-200 text-shadow-sm/60 text-shadow-blue-950" style="font-family: hiruko;">▼ click for yap</p>              
           </div>
           <div id="pianoyap-icon" class="toolshover"> <!--piano icon div-->
-            <img src="images/instrument-keyboard.png" class="w-75 hover:w-80 active:w-70 duration-500">
+            <img src="src/images/instrument-keyboard.png" class="w-75 hover:w-80 active:w-70 duration-500">
             <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">piano</p>
             <p class="text-xl text-pink-100 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-pink-50 text-shadow-sm/60 text-shadow-blue-950" style="font-family: regular;">quit after rcm 5 LMAOO</p>
             <p class="text-xl text-cyan-50 hover:underline hover:text-2xl duration-200 decoration-wavy decoration-cyan-100 active:text-cyan-200 text-shadow-sm/60 text-shadow-blue-950" style="font-family: hiruko;">▼ click for yap</p>            
@@ -283,11 +283,11 @@
         <!--singing div-->
         <div id="singingyap-open" class="hidden bg-linear-to-b from-white/80 to-white/65 rounded-3xl p-5 m-5 h-fit w-fit">
             <div id="singingyap-close" class="grid grid-cols-2 w-fit float-right"> <!--close window button-->
-            <img src="images/close2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover">
-            <img src="images/close2-2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover"> 
+            <img src="src/images/close2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover">
+            <img src="src/images/close2-2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover"> 
           </div>
             <p class="inline">
-              <img src="images/yap-mic.png" class="float-left w-40 h-45 m-7 hover:animate-[smallbounce_1s_infinite] hover:w-45 hover:h-50 duration-300">
+              <img src="src/images/yap-mic.png" class="float-left w-40 h-45 m-7 hover:animate-[smallbounce_1s_infinite] hover:w-45 hover:h-50 duration-300">
               <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 m-2 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family:regular;">singing yap time</p>
               <p class="text-left text-wrap text-cyan-800 text-xl font-semibold text-shadow-lg/50 text-shadow-white" style="font-family: regular;"> used to be in HTHS choir aka the worst experience of my life
                 <br>they made us sing this "original song" with horrendous lyrics and because half our choir was<strong style="font-family: hiruko">...</strong> less than musically inclined<strong style="font-family: hiruko">...</strong> the harmony sounded like a group of dying rats
@@ -303,11 +303,11 @@
           <!--clarinet div-->
         <div id="clarinetyap-open" class="hidden bg-linear-to-b from-white/80 to-white/65 rounded-3xl p-5 m-5 h-fit w-fit">
             <div id="clarinetyap-close" class="grid grid-cols-2 w-fit float-right"> <!--close window button-->
-              <img src="images/close2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover">
-              <img src="images/close2-2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover"> 
+              <img src="src/images/close2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover">
+              <img src="src/images/close2-2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover"> 
             </div>
             <p class="inline">
-              <img src="images/yap-clarinet.png" class="float-right w-40 h-45 m-7 hover:animate-[smallbounce_1s_infinite] hover:w-45 hover:h-50 duration-300">
+              <img src="src/images/yap-clarinet.png" class="float-right w-40 h-45 m-7 hover:animate-[smallbounce_1s_infinite] hover:w-45 hover:h-50 duration-300">
               <p class="text-2xl text-cyan-800 font-black hover:underline hover:text-3xl duration-200 m-2 decoration-wavy decoration-cyan-600 text-shadow-sm/60 text-shadow-blue-950" style="font-family:regular;">clarinet yap time</p>
               <p class="text-left text-wrap text-pink-800 text-xl font-semibold text-shadow-lg/50 text-shadow-white" style="font-family: regular;">
                 it's a sad life :C i was only in band for one freaking year!! yeah! only 1 year of clarinet!! EOM band has morning practices that coincide w studco meetings AND EOM music is super strict so i cant even join EOM band if i wanted to but tbh i can probably afford to rent a clarinet now and maybe join public band cus i finally got PAID (thank the lorddddd for art comps)
@@ -320,11 +320,11 @@
         <!--piano div-->
         <div id="pianoyap-open" class="hidden bg-linear-to-b from-white/80 to-white/65 rounded-3xl p-5 m-5 h-fit w-fit">
             <div id="pianoyap-close" class="grid grid-cols-2 w-fit float-right"> <!--close window button-->
-            <img src="images/close2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover">
-            <img src="images/close2-2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover"> 
+            <img src="src/images/close2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover">
+            <img src="src/images/close2-2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover"> 
           </div>
             <p class="inline">
-              <img src="images/yap-piano.png" class="float-left w-40 h-45 m-7 hover:animate-[smallbounce_1s_infinite] hover:w-45 hover:h-50 duration-300">
+              <img src="src/images/yap-piano.png" class="float-left w-40 h-45 m-7 hover:animate-[smallbounce_1s_infinite] hover:w-45 hover:h-50 duration-300">
               <p class="text-2xl text-pink-700 font-black hover:underline hover:text-3xl duration-200 m-2 decoration-wavy decoration-pink-500 text-shadow-sm/60 text-shadow-blue-950" style="font-family:regular;">piano yap time</p>
               <p class="text-left text-wrap text-cyan-800 text-xl font-semibold text-shadow-lg/50 text-shadow-white" style="font-family: regular;"> 
                 i could probably be considered the world's least qualified piano player LMAOO i basically played from ages 6 to 10 and then quit when covid hit :C
@@ -337,14 +337,14 @@
     </div>
     <!--projects div-->
     <div id="projectsopen" class="hidden draggable absolute">
-      <div class="absolute m-10 p-6 w-250 h-200 grid grid-cols-2 grid-rows-2 bg-[url(images/bgfiles-bigbox.jpg)] rounded-4xl shadow-blue-800 shadow-2xl/50">
+      <div class="absolute m-10 p-6 w-250 h-200 grid grid-cols-2 grid-rows-2 bg-[url(./src/images/bgfiles-bigbox.jpg)] rounded-4xl shadow-blue-800 shadow-2xl/50">
       <!--project explorer header-->
       <div class="m-2 h-fit p-2 flex col-span-2 row-span-1 bg-linear-to-t from-white/50 to-white/35 rounded-4xl">
         <div id="projectsclose" class="grid grid-cols-2 h-8 place-self-start">
-            <img src="images/close2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover">
-            <img src="images/close2-2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover">
+            <img src="src/images/close2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover">
+            <img src="src/images/close2-2.png" class="w-7 h-7 hover:w-8 hover:h-8 toolshover">
         </div>
-        <img src="images/files.png" class="place-self-center w-25 h-25 drop-shadow-white drop-shadow-xl hover:w-27 hover:h-27 hover:drop-shadow-2xl hover:drop-shadow-white duration-300">
+        <img src="src/images/files.png" class="place-self-center w-25 h-25 drop-shadow-white drop-shadow-xl hover:w-27 hover:h-27 hover:drop-shadow-2xl hover:drop-shadow-white duration-300">
         <p class="place-self-center inline text-5xl hover:text-6xl duration-500 text-white text-shadow-lg/65 text-shadow-blue-950 underline decoration-wavy" style="font-family: hiruko;">project explorer</p>
       </div>
     <!--project explorer menu side-->
@@ -352,17 +352,17 @@
         <p class="text-3xl text-pink-400 text-shadow-blue-950 text-shadow-lg/75 hover:underline hover:text-4xl duration-300 decoration-wavy" style="font-family:hiruko;">projects</p>
       <!--file button div current-->
         <div id="current-icon" class="toolshover flex flex-col text-center h-fit p-2 m-2">
-          <img src="images/files-2.png" class="place-self-center duration-300 w-35 h-35 hover:w-37 hover:h-37 active:w-30 active:h-30 drop-shadow-blue-950 drop-shadow-lg/65 -mb-2">
+          <img src="src/images/files-2.png" class="place-self-center duration-300 w-35 h-35 hover:w-37 hover:h-37 active:w-30 active:h-30 drop-shadow-blue-950 drop-shadow-lg/65 -mb-2">
           <p class="text-blue-950 text-xl text-shadow-blue-950 text-shadow-sm/65 h-1" style="font-family: regular;">current</p>
         </div>
       <!--file button div archive-->
         <div id="archive-icon" class="toolshover flex flex-col grid-rows-2 text-center h-fit p-2 m-2">
-          <img src="images/files-2.png" class="place-self-center duration-300 w-35 h-35 hover:w-37 hover:h-37 active:w-30 active:h-30 drop-shadow-blue-950 drop-shadow-lg/65 -mb-2">
+          <img src="src/images/files-2.png" class="place-self-center duration-300 w-35 h-35 hover:w-37 hover:h-37 active:w-30 active:h-30 drop-shadow-blue-950 drop-shadow-lg/65 -mb-2">
           <p class="text-blue-950 text-xl text-shadow-blue-950 text-shadow-sm/65" style="font-family: regular;">archive</p>
         </div>
       <!--file button div tools-->
         <div id="tools-icon" class="toolshover flex flex-col grid-rows-2 text-center h-fit p-2 m-2">
-          <img src="images/files-2.png" class="place-self-center duration-300 w-35 h-35 hover:w-37 hover:h-37 active:w-30 active:h-30 drop-shadow-blue-950 drop-shadow-lg/65 -mb-2">
+          <img src="src/images/files-2.png" class="place-self-center duration-300 w-35 h-35 hover:w-37 hover:h-37 active:w-30 active:h-30 drop-shadow-blue-950 drop-shadow-lg/65 -mb-2">
           <p class="text-blue-950 text-xl text-shadow-blue-950 text-shadow-sm/65" style="font-family: regular;">tools</p>
         </div>
       </div>
@@ -371,31 +371,6 @@
         <div id="nothingtext"><p class="block text-xl text-pink-800 text-shadow-blue-950 text-shadow-sm/65" style="font-family: regular;">nothing here yet! <br> press a folder on the sidebar to see my projects :D</p></div>
         <!--current projects viewer display-->
         <div id="project-current" class="hidden">
-          <!--arcade div-->
-          <div>
-            <p class="text-3xl m-2 text-pink-600 text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">ARCADE Ottawa</p>
-            <!--arcade picture & text-->
-            <div class="flex">
-              <img src="images/arcadelogo_big.png" class="w-75 hover:animate-[smallbounce_1s_infinite] hover:w-80 hover:h-45 duration-500">
-              <p class="text-blue-950 text-xl text-shadow-blue-950 text-shadow-sm/65" style="font-family: regular;">
-                yes! im the lead organizer of this 24h highschool hackathon :D it'll take place in fall 2025 (around oct-nov)
-                <br> <a href="https://ikealoverkat.github.io/ARCADEwebsite/" target="_blank" class="text-pink-700 hover:underline decoration-wavy"><i>look at our website!</i></a>
-              </p>            
-            </div>
-            <p class="text-blue-950 text-xl text-shadow-blue-950 text-shadow-sm/65" style="font-family: regular;">
-              tbh we're a pretty unserious organizing team like the hackathon is literally gambling- i mean probability-themed- but i've been working v hard on the graphics + i made the website and im really excited! 1st time organizing a hackathon woo,, i'll probably edit this website as we figure out more stuff</p>
-            <p class="text-pink-400 text-2xl text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">image gallery (i drew all this)</p>
-            <!--image gallery-->
-            <div id="arcadegallery" class="flex w-125 h-50 overflow-x-scroll overflow-y-hidden custom-scroll drop-shadow-blue-950 drop-shadow-lg bg-blue-200/25 rounded-2xl">
-              <img src="images/arcadelogo.png" class="w-250">
-              <img src="images/arcadelio.png">
-              <img src="images/arcadelogo_big_organizer.png">
-              <img src="images/arcadelogo_icon_moneyc.png">
-              <img src="images/arcadeorganizer_mascot.png">
-              <img src="images/arcadelogo_icon_shrimpc.png">
-              <img src="images/arcadelogo_big.png">
-            </div>
-          </div>
           <!--this website div-->
           <div>
             <p class="text-3xl m-2 text-cyan-600 text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">this website!</p>
@@ -404,17 +379,17 @@
               <p class="text-blue-950 text-xl text-shadow-blue-950 text-shadow-sm/65" style="font-family: regular;">
                 woah guys,,, this website that i made,,, is one of my projects,,, crazy concept right?! in all seriousness this website is basically just me slapping pictures wherever i want and not following proper web design conventions but we ball amirite!!!! (cope) 
               </p>
-              <img src="images/hachiware-1.jpg" class="w-50 hover:animate-[smallbounce_1s_infinite] duration-200 hover:w-52 hover:h-60">            
+              <img src="src/images/hachiware-1.jpg" class="w-50 hover:animate-[smallbounce_1s_infinite] duration-200 hover:w-52 hover:h-60">            
             </div>
             <p class="text-blue-950 text-xl text-shadow-blue-950 text-shadow-sm/65" style="font-family: regular;">
               i'll probably be adding a lot more to this website in the future and js yapping about random stuff!! experimenting w tailwind css has been lots of fun lol</p>
-          </div>
+          </div>          
           <!--goofy pictures div-->
           <div>
             <p class="text-3xl m-2 text-pink-600 text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">silly image edits</p>
             <!--silly picture & text-->
             <div class="flex">
-              <img src="images/hachiware-2.jpg" class="w-55 m-2 hover:animate-[smallbounce_1s_infinite] hover:w-60 hover:h-55 rounded-2xl shadow-blue-950 shadow-lg/65 duration-500">
+              <img src="src/images/hachiware-2.jpg" class="w-55 m-2 hover:animate-[smallbounce_1s_infinite] hover:w-60 hover:h-55 rounded-2xl shadow-blue-950 shadow-lg/65 duration-500">
               <p class="text-blue-950 text-xl text-shadow-blue-950 text-shadow-sm/65" style="font-family: regular;">
                 does this even need to be elaborated upon look at this gallery of peak,,, yeah idk if this belongs with the rest of the semi-normal projects but it is indeed a silly thing i do! give me an energy drink and ill make u one of these
                 </p>            
@@ -422,14 +397,14 @@
             <p class="text-pink-400 text-2xl text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">gallery</p>
             <!--image gallery-->
             <div id="peakgallery" class="flex w-125 h-50 overflow-x-scroll overflow-y-hidden custom-scroll drop-shadow-blue-950 drop-shadow-lg bg-blue-200/25 rounded-2xl m-5 p-2 [&>img]:m-2 [&>img]:rounded-xl">
-              <img src="images/peak2.png" class="w-250">
-              <img src="images/peakaustin.png">
-              <img src="images/peak-lobotomin.png">
-              <img src="images/peaksebby.png">
-              <img src="images/peaksebby2.png">
-              <img src="images/peaksybau.png">
-              <img src="images/peaksidequest.gif">
-              <img src="images/peaksybaugng.png">
+              <img src="src/images/peak2.png" class="w-250">
+              <img src="src/images/peakaustin.png">
+              <img src="src/images/peak-lobotomin.png">
+              <img src="src/images/peaksebby.png">
+              <img src="src/images/peaksebby2.png">
+              <img src="src/images/peaksybau.png">
+              <img src="src/images/peaksidequest.gif">
+              <img src="src/images/peaksybaugng.png">
             </div>
           </div>
           <!--sidequest div-->
@@ -441,10 +416,42 @@
                 im the lead singer + leader of this band!! unfortunately tho im lazy and i havent been working on this enough LOL but i will start working after ARCADE workload lessens! trust!
                 <br><a href="https://www.instagram.com/sidequestheband/" target="_blank" class="text-pink-700 hover:underline decoration-wavy"><i>follow our ig!</i></a> 
               </p>
-              <img src="images/sidequest.png" class="w-50 h-50 hover:animate-[smallbounce_1s_infinite] duration-200 hover:w-52 hover:h-52">            
+              <img src="src/images/sidequest.png" class="w-50 h-50 hover:animate-[smallbounce_1s_infinite] duration-200 hover:w-52 hover:h-52">            
             </div>
             <p class="text-blue-950 text-xl text-shadow-blue-950 text-shadow-sm/65" style="font-family: regular;">
               hopefully by mid-august? we will have some arrangements and be able 2 perform w another band called ransom note!! v excited to be able to do a joint performance but that means i have to socialize more and talk to ransom note members,,, eugh socializing (will never beat the CS nolife allegations i fear) </p>
+          </div>
+                    <!--storyboard div-->
+          <div>
+            <p class="text-3xl m-2 text-pink-600 text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">Storyboard</p>
+            <!--storyboard picture & text-->
+            <div class="flex">
+              <img src="src/images/storyboardlogo.png" class="w-75 hover:animate-[smallbounce_1s_infinite] hover:w-80 hover:h-45 duration-500">
+              <p class="text-blue-950 text-xl text-shadow-blue-950 text-shadow-sm/65" style="font-family: regular;">
+                im co-leading a project (& working w some super awesome ppl!!) called Storyboard, a Hack Club official YSWS: 
+                <br> <a href="https://ikealoverkat.github.io/ARCADEwebsite/" target="_blank" class="text-cyan-700 hover:underline decoration-wavy"><i>look at our website!</i></a>
+              </p>            
+            </div>
+            <p class="text-blue-950 text-xl text-shadow-blue-950 text-shadow-sm/65 text-pretty" style="font-family: regular;">
+              basically, it's a program where you make a visual novel to get prizes like stickers, plushies, drawing tablets, and even a STEAM license!! it's really cool & everyone's projects are amazing,, im rlly excited for the direction we're going next!
+              so far i made a tutorial slide & website, and also spam emailed a bunch of teachers lol
+              <br><a href="https://docs.google.com/presentation/d/1EVhaEfpMS_GuYQo0u2su8s9y8YBbK1J678x35hwhVvU/edit?usp=sharing" target="blank" class="text-cyan-700 hover:underline decoration-wavy">check out my slide!</a>
+              <br><a href="https://ikealoverkat.github.io/storyboard2/" target="blank" class="text-pink-700 hover:underline decoration-wavy">check out my website! (THEY WON'T BUY ME A DOMAIN AND IT'S GENUINELY FRYING ME HELP)</a>
+            </p>
+          </div>
+           <!--studco div-->
+          <div>
+            <p class="text-3xl m-2 text-cyan-600 text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">EOM StudCo: Publicity</p>
+            <!--studco picture & text-->
+            <div class="flex">
+              <img src="src/images/studco-logo.png" class="w-55 hover:animate-[smallbounce_1s_infinite] hover:w-60 duration-500">
+              <p class="text-blue-950 text-xl text-shadow-blue-950 text-shadow-sm/65" style="font-family: regular;">
+                im the co-head of publicity for my school's student council! we mostly make instagram posts but theres other stuff too like posters and display cases so yay
+              <br> <a href="https://www.instagram.com/eom_studco/" target="blank" class="text-cyan-700 hover:underline decoration-wavy">check out the instagram!</a>
+              </p>            
+            </div>
+            <p class="text-blue-950 text-xl text-shadow-blue-950 text-shadow-sm/65 text-pretty" style="font-family: regular;">
+              ykw i won't namedrop or say too much but SOME OF THE PEOPLE ON THIS COUNCIL PISS ME THE HELL OFF<strong style="font-family:hiruko;">.</strong> it's fine it's fine it's fine (holy cope) BRROOOO SOME OF THESE MFS ARE JUST SO ENTITLED LIKE SYBAU</p>
           </div>
           <p class="text-3xl m-2 text-pink-600 text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">more on my github + coming soon...</p>
         </div>
@@ -456,7 +463,7 @@
               <p class="text-blue-950 text-xl text-shadow-blue-950 text-shadow-sm/65 text-left" style="font-family: regular;">
                 yes! i did video editing for ~3y and learnt Adobe Ae + Pr! unfortunately i edited animes, gacha, and genshin impact,,, so i dont feel linking those channels here LOL also had an editing studio which got like 200k on one video before i gave up LMAOO
               </p>
-              <img src="images/hachiware-3.jpg" class="w-47 h-47 rounded-2xl shadow-blue-950 shadow-md hover:animate-[smallbounce_1s_infinite] duration-200 hover:w-52 hover:h-52">            
+              <img src="src/images/hachiware-3.jpg" class="w-47 h-47 rounded-2xl shadow-blue-950 shadow-md hover:animate-[smallbounce_1s_infinite] duration-200 hover:w-52 hover:h-52">            
             </div>
             <p class="text-blue-950 text-xl text-shadow-blue-950 text-shadow-sm/65" style="font-family: regular;">
               at least these skills are not completely useless!! pls hire me for motion graphics,,, i swear i can do motion graphics,,, pls,,,</p>
@@ -487,7 +494,7 @@
           <div> <!--vtuber div-->
             <p class="text-3xl m-2 text-pink-600 text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">vtuber</p>            
             <div class="flex">
-              <img src="images/vtuber-icon.png" class="w-75 h-45 rounded-2xl shadow-blue-950 shadow-md hover:animate-[smallbounce_1s_infinite] hover:w-80 hover:h-50 duration-500">
+              <img src="src/images/vtuber-icon.png" class="w-75 h-45 rounded-2xl shadow-blue-950 shadow-md hover:animate-[smallbounce_1s_infinite] hover:w-80 hover:h-50 duration-500">
               <p class="text-blue-950 text-xl text-shadow-blue-950 text-shadow-sm/65 text-right" style="font-family: regular;">
                 man i did so many random sidequests before i had to lock in for school LMAO i made 3 vtuber models which u can look at in the image gallery (theres also bad concept art there! woo!),,,
               </p>            
@@ -496,19 +503,19 @@
                 i kinda wanted to debut too but streaming is SO energy-consuming :C drawing + rigging this model was hella fun tho (although mentally draining lmao)</p>
               <p class="text-pink-400 text-2xl text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">image gallery</p>            
               <div id="vtubergallery" class="flex w-125 h-50 overflow-x-scroll overflow-y-hidden custom-scroll drop-shadow-blue-950 drop-shadow-lg bg-blue-200/25 rounded-2xl [&>img]: m-2 [&>img]:p-2 [&>img]:rounded-3xl">
-              <img src="images/vtuber-1.png" class="w-250">
-              <img src="images/vtuber-2.gif">
-              <img src="images/vtuber-3.png">
-              <img src="images/vtuber-4.png">
-              <img src="images/vtuber-5.png">
-              <img src="images/vtuber-6.png">
+              <img src="src/images/vtuber-1.png" class="w-250">
+              <img src="src/images/vtuber-2.gif">
+              <img src="src/images/vtuber-3.png">
+              <img src="src/images/vtuber-4.png">
+              <img src="src/images/vtuber-5.png">
+              <img src="src/images/vtuber-6.png">
               </div>
             </div>
           <div> <!--seals div-->
             <p class="text-3xl m-2 text-cyan-600 text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">silly seals stickerpack</p>            
             <div class="flex [&>img]:w-65 items-center justify-center">
-                <img src="images/seal_flop.png" class="duration-400 hover:w-70 hover:h-55 hover:animate-[smallbounce_1s_infinite]">
-                <img src="images/seal_pudding.png" class="duration-400 hover:w-70 hover:h-55 hover:animate-[smallbounce_1s_infinite]">
+                <img src="src/images/seal_flop.png" class="duration-400 hover:w-70 hover:h-55 hover:animate-[smallbounce_1s_infinite]">
+                <img src="src/images/seal_pudding.png" class="duration-400 hover:w-70 hover:h-55 hover:animate-[smallbounce_1s_infinite]">
             </div>
             <p class="text-blue-950 text-xl text-shadow-blue-950 text-shadow-sm/65" style="font-family: regular;">
               these seals are soo cute + a great concept for a stickerpackk but i was drawing these in the middle of the school year so unfortunately workload got to me and i couldnt draw the rest of the seals,,, who knows?? maybe ill pick this back up and release a full stickerpack!
@@ -521,7 +528,7 @@
                 i made this game w my friends and coded the whole thing for the JPEG ottawa hackathon!! it was pretty fun and i somehow learnt renPy in 24h and made this on ONE energy drink! yes! only one! amazing,,
               </p>
               <div class="flex-col m-2">
-                <img src="images/tinderhortons.png" class="hover:animate-[smallbounce_1s_infinite] hover:w-260 w-250 rounded-3xl shadow-blue-950 shadow-md/65 duration-500">
+                <img src="src/images/tinderhortons.png" class="hover:animate-[smallbounce_1s_infinite] hover:w-260 w-250 rounded-3xl shadow-blue-950 shadow-md/65 duration-500">
                 <p style="font-family: regular; font-weight: bold;"><a href="https://ikealoverkat.itch.io/tinder-hortons" target="_blank" class="text-pink-700 text-shadow-blue-950 text-shadow-sm/75 text-xl hover:underline decoration-wavy"><i>play the game!</i></a>
                   <br> <a href="https://github.com/ikealoverkat/Tinder-Hortons" target="_blank" class="text-pink-800 text-shadow-sm/75 text-xl hover:underline decoration-wavy"><i>see the source code</i></a>
                 </p>
@@ -532,7 +539,7 @@
             <p class="text-3xl m-2 text-cyan-600 text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">Computer Crasher 101</p>            
             <div class="flex">
               <div class="flex-col m-2">
-                <img src="images/computercrasher.gif" class="hover:animate-[smallbounce_1s_infinite] hover:w-280 w-250 rounded-3xl drop-shadow-blue-950 drop-shadow-md/65 duration-500">
+                <img src="src/images/computercrasher.gif" class="hover:animate-[smallbounce_1s_infinite] hover:w-280 w-250 rounded-3xl drop-shadow-blue-950 drop-shadow-md/65 duration-500">
                 <p style="font-family: regular; font-weight: bold;">
                   <br> <a href="https://github.com/Er1n-jpg/Scrapyard-2025" target="_blank" class="text-pink-800 text-shadow-sm/75 text-xl hover:underline decoration-wavy"><i>see the source code</i></a>
                 </p>
@@ -549,12 +556,37 @@
                 my first ever shipped webdev project that i made for grade 8 math class LMAOO i was such a tryhard but i was competing with this other guy to be the Ultimate Webdev and IT WAS NOWHERE CLOSE like he kinda sucked and had multiple body tags and didnt know how to link a stylesheet
               </p>
                <div class="flex-col m-2">
-                <img src="images/shark.png" class="animate-[slowspin_3s_linear_infinite] hover:animate-[smallbounce_1s_infinite] hover:w-280 w-250 rounded-3xl drop-shadow-blue-950 drop-shadow-md/65 duration-500">
+                <img src="src/images/shark.png" class="animate-[slowspin_3s_linear_infinite] hover:animate-[smallbounce_1s_infinite] hover:w-280 w-250 rounded-3xl drop-shadow-blue-950 drop-shadow-md/65 duration-500">
                 <p style="font-family: regular; font-weight: bold;">
                   <br> <a href="https://ikealoverkat.github.io/ikealoverkat.github.io-mathclassproject/" target="_blank" class="text-pink-700 text-shadow-sm/75 text-xl hover:underline decoration-wavy"><i>see the website!</i></a>
                 </p>
               </div>            
             </div>
+          <!--arcade div-->
+          <div>
+            <p class="text-3xl m-2 text-pink-600 text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">ARCADE Ottawa</p>
+            <!--arcade picture & text-->
+            <div class="flex">
+              <img src="src/images/arcadelogo_big.png" class="w-75 hover:animate-[smallbounce_1s_infinite] hover:w-80 hover:h-45 duration-500">
+              <p class="text-blue-950 text-xl text-shadow-blue-950 text-shadow-sm/65" style="font-family: regular;">
+                yes! i WAS the lead organizer of this 24h highschool hackathon! interesting things happened in the org team and i quit,,,
+                <br> <a href="https://ikealoverkat.github.io/ARCADEwebsite/" target="_blank" class="text-pink-700 hover:underline decoration-wavy"><i>look at our website!</i></a>
+              </p>            
+            </div>
+            <p class="text-blue-950 text-xl text-shadow-blue-950 text-shadow-sm/65 text-pretty" style="font-family: regular;">
+              i basically was doing everything (erin & susan were great too yall r supa cool) and we had this meeting where THREE PEOPLE including me showed up and i was just like,,, bye,,, im still hella proud of all the work i did for this tho so ~december i'll probably organize another hackathon like this one! ,,,but with a better team!</p>
+            <p class="text-pink-400 text-2xl text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">image gallery (i drew all this)</p>
+            <!--image gallery-->
+            <div id="arcadegallery" class="flex w-125 h-50 overflow-x-scroll overflow-y-hidden custom-scroll drop-shadow-blue-950 drop-shadow-lg bg-blue-200/25 rounded-2xl">
+              <img src="src/images/arcadelogo.png" class="w-250">
+              <img src="src/images/arcadelio.png">
+              <img src="src/images/arcadelogo_big_organizer.png">
+              <img src="src/images/arcadelogo_icon_moneyc.png">
+              <img src="src/images/arcadeorganizer_mascot.png">
+              <img src="src/images/arcadelogo_icon_shrimpc.png">
+              <img src="src/images/arcadelogo_big.png">
+            </div>
+          </div>
           </div>
           <p class="text-3xl m-2 text-cyan-600 text-shadow-blue-950 text-shadow-md" style="font-family: hiruko;">more on my <a href="https://github.com/ikealoverkat" target="_blank" class="text-pink-600 hover:underline decoration-wavy">github!</a></p>                      
         </div>
@@ -634,41 +666,41 @@
       </div>
     </div>
     <!--contact div-->
-    <div id="contactopen" style="top: 1000px; left: 700px;" class="hidden absolute draggable bg-[url(images/socials-bg.jpg)] w-fit h-fit m-10 -mt-30 p-6 rounded-2xl grid-cols-1 shadow-pink-600 shadow-2xl/80 duration-300 [&>div]:m-3.5 [&>div]:w-30 [&>div>img]:shadow-blue-950 [&>div>img]:shadow-md [&>div>img]:rounded-3xl [&>div]:justify-self-center [&>div]:hover:w-35 [&>div]:duration-350 [&>div]:hover:underline [&>div]:hover:decoration-wavy [&>div]:decoration-pink-500 [&>div]:text-center">
+    <div id="contactopen" style="top: 1000px; left: 700px;" class="hidden absolute draggable bg-[url(src/images/socials-bg.jpg)] w-fit h-fit m-10 -mt-30 p-6 rounded-2xl grid-cols-1 shadow-pink-600 shadow-2xl/80 duration-300 [&>div]:m-3.5 [&>div]:w-30 [&>div>img]:shadow-blue-950 [&>div>img]:shadow-md [&>div>img]:rounded-3xl [&>div]:justify-self-center [&>div]:hover:w-35 [&>div]:duration-350 [&>div]:hover:underline [&>div]:hover:decoration-wavy [&>div]:decoration-pink-500 [&>div]:text-center">
       <span id="contactclose" class="-ml-5 -mt-5 grid grid-cols-2 w-fit"> <!--buttons to close contactbox-->
-        <img src="images/close2.png" class="w-10 h-10 m-0 toolshover hover:h-11 hover:w-11">
-        <img src="images/close2-2.png" class="w-10 h-10 m-0 toolshover hover:h-11 hover:w-11">
+        <img src="src/images/close2.png" class="w-10 h-10 m-0 toolshover hover:h-11 hover:w-11">
+        <img src="src/images/close2-2.png" class="w-10 h-10 m-0 toolshover hover:h-11 hover:w-11">
       </span>  
       <div class="row-span-1 hoverable">
           <a href="mailto:katwang7749@gmail.com" target="_blank">  
-            <img src="images/gmail.png">
+            <img src="src/images/gmail.png">
             <p class="text-2xl text-pink-600 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">gmail</p>
             </a>
         </div>
         <div class="row-span-2 hoverable">
           <a href="https://www.instagram.com/777luckykat/" target="_blank">
-            <img src="images/ig-spam.png">
+            <img src="src/images/ig-spam.png">
             <p class="text-2xl text-pink-600 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">public ig</p>
           </a>
           </div>
         <div class="row-span-3 hoverable">
           <a href="https://www.instagram.com/kat.pluhh/" target="_blank">
-            <img src="images/ig-spam.jpg">
+            <img src="src/images/ig-spam.jpg">
             <p class="text-2xl text-pink-600 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">spam ig</p>
           </a>
         </div>
         <div class="row-span-4 hoverable">
           <a href="https://github.com/ikealoverkat" target="_blank">
-            <img src="images/github.png">
+            <img src="src/images/github.png">
             <p class="text-2xl text-pink-600 text-shadow-sm/60 text-shadow-blue-950" style="font-family:hiruko;">github</p>
           </a>
         </div>
     </div>
     <!-- misc div -->
-    <div id="miscopen" style="top: 700px; left:500px;" class="hidden draggable absolute bg-[url(images/bgmisc-bigbox.jpg)] m-10 p-6 overflow-x-hidden overflow-y-scroll custom-scroll rounded-4xl w-250 h-250 shadow-pink-600/65 hover:shadow-pink-600/80 shadow-2xl">
+    <div id="miscopen" style="top: 700px; left:500px;" class="hidden draggable absolute bg-[url(src/images/bgmisc-bigbox.jpg)] m-10 p-6 overflow-x-hidden overflow-y-scroll custom-scroll rounded-4xl w-250 h-250 shadow-pink-600/65 hover:shadow-pink-600/80 shadow-2xl">
       <span id="miscclose" class="grid grid-cols-2 w-fit"> <!--misc close controls-->
-        <img src="images/close2.png" class="w-10 h-10 m-0 toolshover hover:h-11 hover:w-11">
-        <img src="images/close2-2.png" class="w-10 h-10 m-0 toolshover hover:h-11 hover:w-11">
+        <img src="src/images/close2.png" class="w-10 h-10 m-0 toolshover hover:h-11 hover:w-11">
+        <img src="src/images/close2-2.png" class="w-10 h-10 m-0 toolshover hover:h-11 hover:w-11">
       </span> 
       <!-- personal yap -->
       <p class="text-5xl hover:text-6xl duration-300 text-pink-500 text-shadow-sm/60 text-shadow-blue-950 underline decoration-wavy" style="font-family: hiruko;">misc! (ᵔᗜᵔ)</p>
@@ -684,19 +716,19 @@
       <!-- icons -->
       <div class="flex h-fit w-fit [&>div>img]:h-35 [&>div>img]:drop-shadow-pink-600/25 [&>div>img]:hover:drop-shadow-pink-600/35 [&>div>img]:drop-shadow-xl [&>div>img]:hover:h-40 [&>div>img]:active:h-25 [&>div>img]:duration-300 duration-300 justify-self-center">
         <div id="likesdl-icon" class="hoverable">
-          <img src="images/hachiware-icon-1.png">
+          <img src="src/images/hachiware-icon-1.png">
           <p class="text-pink-400 text-xl text-shadow-blue-950 text-shadow-xs" style="font-family:hiruko;">likes/dislikes</p>
         </div>
         <div id="blinkies-icon" class="hoverable">
-          <img src="images/hachiware-icon-2.png">
+          <img src="src/images/hachiware-icon-2.png">
           <p class="text-cyan-500 text-xl text-shadow-blue-950 text-shadow-xs" style="font-family:hiruko;">blinkie/stamp <br> collection</p>
         </div>
         <div id="foods-icon" class="hoverable">
-          <img src="images/hachiware-icon-3.png">
+          <img src="src/images/hachiware-icon-3.png">
           <p class="text-pink-400 text-xl text-shadow-blue-950 text-shadow-xs" style="font-family:hiruko;">fav foods</p>
         </div>
         <div id="yap-icon" class="hoverable">
-          <img src="images/hachiware-icon-4.png">
+          <img src="src/images/hachiware-icon-4.png">
           <p class="text-cyan-500 text-xl text-shadow-blue-950 text-shadow-xs" style="font-family:hiruko;">random stuff <br> + yap</p>
         </div>                              
       </div>
@@ -704,8 +736,8 @@
       <div id="likesdl-open" class="hidden flex-col bg-white/65 rounded-4xl m-5 p-5 shadow-2xl shadow-pink-600/25 hover:shadow-pink-600/35">
           <!-- close div -->
           <span id="likesdl-close" class="grid grid-cols-2 w-fit">
-          <img src="images/close2.png" class="w-7 h-7 toolshover hover:h-8 hover:w-8">
-          <img src="images/close2-2.png" class="w-7 h-7 toolshover hover:h-8 hover:w-8">
+          <img src="src/images/close2.png" class="w-7 h-7 toolshover hover:h-8 hover:w-8">
+          <img src="src/images/close2-2.png" class="w-7 h-7 toolshover hover:h-8 hover:w-8">
         </span> 
         <!-- likesdl content -->
         <div class="flex text-center justify-center -mt-2">
@@ -736,7 +768,7 @@
                 <p class=" text-left text-xl font-bold text-pink-900 text-shadow-white text-shadow-lg">
                   <strong class="text-pink-300 text-shadow-blue-950 text-shadow-xs">❤</strong> 
                   hachiware</p> 
-                <img src="images/hachiware-1.jpg" class="w-15 h-15 -mt-4 ml-1">
+                <img src="src/images/hachiware-1.jpg" class="w-15 h-15 -mt-4 ml-1">
               </div>                        
             </p>
           </div>
@@ -770,8 +802,8 @@
       <div id="blinkies-open" class="hidden flex-col bg-white/65 rounded-4xl m-5 p-5 h-fit shadow-2xl shadow-pink-600/25 hover:shadow-pink-600/35">
         <!-- close div -->
           <span id="blinkies-close" class="grid grid-cols-2 w-fit">
-          <img src="images/close2.png" class="w-7 h-7 toolshover hover:h-8 hover:w-8">
-          <img src="images/close2-2.png" class="w-7 h-7 toolshover hover:h-8 hover:w-8">
+          <img src="src/images/close2.png" class="w-7 h-7 toolshover hover:h-8 hover:w-8">
+          <img src="src/images/close2-2.png" class="w-7 h-7 toolshover hover:h-8 hover:w-8">
         </span>
         <!--content-->
         <div>
@@ -848,7 +880,7 @@
             <img src="blinkies/icon13.gif" class="w-60 h-28">
             <img src="blinkies/icon12.gif" class="w-28 h-28">
             <img src="blinkies/icon14.gif" class="w-50 h-28">
-            <img src="images/peaksybau.png" class="w-28 h-28">              
+            <img src="src/images/peaksybau.png" class="w-28 h-28">              
           </div>
         </div>
       </div>
@@ -856,8 +888,8 @@
       <div id="foods-open" class="hidden flex-col bg-white/65 rounded-4xl m-5 p-5 h-fit shadow-2xl shadow-pink-600/25 hover:shadow-pink-600/35">
         <!-- close div -->
         <span id="foods-close" class="grid grid-cols-2 w-fit">
-          <img src="images/close2.png" class="w-7 h-7 toolshover hover:h-8 hover:w-8">
-          <img src="images/close2-2.png" class="w-7 h-7 toolshover hover:h-8 hover:w-8">
+          <img src="src/images/close2.png" class="w-7 h-7 toolshover hover:h-8 hover:w-8">
+          <img src="src/images/close2-2.png" class="w-7 h-7 toolshover hover:h-8 hover:w-8">
         </span>
         <!-- content -->
         <div>
@@ -865,7 +897,7 @@
           <p class="text-xl text-pretty font-bold text-pink-900 text-shadow-white text-shadow-lg m-2 mt-5" style="font-family:regular">as a certified glutton i obvi have to list my fav foods on my website!! click the pictures 4 recipes (if available) :3</p>
           <!-- pizza pizza pizza -->
             <div class="flex bg-white/65 shadow-lg shadow-pink-600/15 duration-300 hover:shadow-xl hover:shadow-pink-600/25 rounded-4xl p-10 m-5">
-            <a href="https://www.pizzapizza.ca/" target="_blank" class="toolshover w-120 h-60 hover:w-140 hover:h-65 duration-300"><img src="images/food-1.png" class="w-60 h-60 hover:w-65 hover:h-65 duration-300 drop-shadow-blue-950 drop-shadow-lg/65 -p-5"></a>
+            <a href="https://www.pizzapizza.ca/" target="_blank" class="toolshover w-120 h-60 hover:w-140 hover:h-65 duration-300"><img src="src/images/food-1.png" class="w-60 h-60 hover:w-65 hover:h-65 duration-300 drop-shadow-blue-950 drop-shadow-lg/65 -p-5"></a>
             <!-- text -->
             <div class="flex-col text-left">
               <p class="text-2xl text-pretty text-cyan-600 decoration-wavy underline text-shadow-xs text-shadow-blue-950 m-2" style="font-family: hiruko;">pizza from pizza pizza</p>
@@ -880,11 +912,11 @@
               <p class="text-xl text-pretty m-2 font-bold text-pink-900" style="font-family: regular;">my favv childhood meal #toopeak i ate this for like a week straight and did not get sick of it <br> this recipe is also tooooo good and one of my favs for zhajiangmian 😝😝😝 
               </p>
             </div>
-            <a href="https://redhousespice.com/zha-jiang-mian/" target="_blank" class="toolshover w-120 h-60 hover:w-140 hover:h-65 duration-300"><img src="images/food-2.png" class="w-60 h-60 hover:w-65 hover:h-65 duration-300 drop-shadow-blue-950 drop-shadow-lg/65 -p-5"></a>
+            <a href="https://redhousespice.com/zha-jiang-mian/" target="_blank" class="toolshover w-120 h-60 hover:w-140 hover:h-65 duration-300"><img src="src/images/food-2.png" class="w-60 h-60 hover:w-65 hover:h-65 duration-300 drop-shadow-blue-950 drop-shadow-lg/65 -p-5"></a>
           </div>
           <!-- salt and vinegar chips -->
           <div class="flex bg-white/65 shadow-lg shadow-pink-600/15 duration-300 hover:shadow-xl hover:shadow-pink-600/25 rounded-4xl p-10 m-5">
-            <img src="images/food-3.png" class="toolshover w-60 h-60 hover:w-65 hover:h-65 duration-300 drop-shadow-blue-950 drop-shadow-lg/65 -p-5">
+            <img src="src/images/food-3.png" class="toolshover w-60 h-60 hover:w-65 hover:h-65 duration-300 drop-shadow-blue-950 drop-shadow-lg/65 -p-5">
             <!-- text -->
             <div class="flex-col text-left">
               <p class="text-2xl text-pretty m-2 text-cyan-600 decoration-wavy underline text-shadow-xs text-shadow-blue-950" style="font-family: hiruko;">salt & vinegar chips</p>
@@ -898,7 +930,7 @@
               <p class="text-2xl m-2 text-pretty text-pink-600 decoration-wavy underline text-shadow-xs text-shadow-blue-950" style="font-family: hiruko;">shin ramen</p>
               <p class="text-xl m-2 text-pretty font-bold text-pink-900" style="font-family: regular;">the amount of shin ramen i consume during the school yr between the hours of 11pm to 2am can NAWT be healthy yall,,, its still SOO good but acc my health is FRIED GANGGG😭✌️ #schoolisruiningmylife #lockedinbutatwhatcost</p>
             </div>
-          <img src="images/food-4.png" class="w-60 h-60 toolshover hover:w-65 hover:h-65 duration-300 drop-shadow-blue-950 drop-shadow-lg/65 -p-5">
+          <img src="src/images/food-4.png" class="w-60 h-60 toolshover hover:w-65 hover:h-65 duration-300 drop-shadow-blue-950 drop-shadow-lg/65 -p-5">
           </div>
         </div>
       </div>
@@ -906,13 +938,34 @@
         <div id="yap-open" class="hidden flex-col bg-white/65 rounded-4xl m-5 p-5 h-fit shadow-2xl shadow-pink-600/25 hover:shadow-pink-600/35">
         <!-- close div -->
         <span id="yap-close" class="grid grid-cols-2 w-fit">
-          <img src="images/close2.png" class="w-7 h-7 toolshover hover:h-8 hover:w-8">
-          <img src="images/close2-2.png" class="w-7 h-7 toolshover hover:h-8 hover:w-8">
+          <img src="src/images/close2.png" class="w-7 h-7 toolshover hover:h-8 hover:w-8">
+          <img src="src/images/close2-2.png" class="w-7 h-7 toolshover hover:h-8 hover:w-8">
         </span>
         <!-- content -->
         <div>
           <p class="text-4xl hover:text-5xl duration-300 text-cyan-500 text-shadow-sm/60 text-shadow-blue-950 hover:underline decoration-wavy" style="font-family: hiruko;">yap time</p> 
           <p class="text-xl font-bold text-cyan-900 text-shadow-white text-shadow-lg m-2 mt-5" style="font-family:regular">ig you can call this a blog? i'll prolly add a webgame here eventually when i stop having the JavaScript Skill Issue of All Time</p>
+          <!-- post 3 -->
+          <p class="text-left text-xl font-bold text-cyan-900 text-shadow-white text-shadow-lg px-20 py-3 m-6 bg-white/75 rounded-4xl shadow-pink-600 shadow-2xl/25 hover:px-22 hover:py-4 hover:shadow-pink-600 hover:shadow-2xl/45 duration-300" style="font-family: regular;">
+            <strong class="text-2xl m-2 text-pink-600 decoration-wavy underline" style="font-family: hiruko;">HOW DO I STOP BEING DELUSIONAL</strong> <strong class="text-pink-400 text-shadow-blue-950 text-shadow-xs">(10/25/25)</strong>
+            <br><strong class="text-pink-400 text-shadow-blue-950 text-shadow-xs">☆</strong> return to trying to fix this website,,, bro it wouldnt work when i tried to commit and update last time and it acc pissed me tf off.
+            i cant tell if school improved or if i acc js got used to it like i just go thru classes/extracurriculars and zone out every day and sleep for the entire weekend! critical thinking skills acc went of the window
+            also it never clocks to me that ppl acc read this website like im just saying shit but i realize mfs be reading this and im js out here losing infinite aura,,, but idc enough to do anything abt it so!!!
+            <br> also i keep having the most tragic ass dreams (and sleeping in anywhere from 12-3pm) and it leaves me disoriented for the rest of the day like wow thanks!
+            <br><br><strong class="text-pink-400 text-shadow-blue-950 text-shadow-xs">♫</strong> blue valentine - NMIXX
+          </p>
+          <!-- post 2 -->
+          <p class="text-left text-xl font-bold text-cyan-900 text-shadow-white text-shadow-lg px-20 py-3 m-6 bg-white/75 rounded-4xl shadow-pink-600 shadow-2xl/25 hover:px-22 hover:py-4 hover:shadow-pink-600 hover:shadow-2xl/45 duration-300" style="font-family: regular;">
+            <strong class="text-2xl m-2 text-pink-600 decoration-wavy underline" style="font-family: hiruko;">the first update</strong> <strong class="text-pink-400 text-shadow-blue-950 text-shadow-xs">(9/12/25)</strong>
+            <br><strong class="text-pink-400 text-shadow-blue-950 text-shadow-xs">☆</strong> GUYSSS I FINALLY GOT A NEW LAPTOP WOOHOO ok the lor eis that my old laptop was genuinely the worst piece of technology ever icl it was so slow and buggy i could NOT cope with that<strong style="font-family: hiruko;">.</strong> but I HAVE A NEW ONE RHAAA 32GB RAM!!!
+            anyways in the last yap post i was talking abt how i was ass at making JS webgames but i OVERCAME MY SKILL ISSUE and MADE 2 WEBGAMES WOOOO one of them is better than the other but whatever,,, kaplay my goat
+            <br><br><a href="https://ikealoverkat.itch.io/kapong" target="_blank"><strong class="text-pink-400 decoration-wavy hover:underline text-shadow-blue-950 text-shadow-xs">play the greater game</strong></a>
+            <br><a href="https://ikealoverkat.itch.io/hachiware-game" target="_blank"><strong class="text-pink-400 decoration-wavy hover:underline text-shadow-blue-950 text-shadow-xs">play the lesser game</strong></a>
+            <br><br><strong class="text-pink-400 text-shadow-blue-950 text-shadow-xs">☆</strong> okay guys BACK to YAPPING!! tdy i saw my ex in the halls and what the gyat bro that haircut SHOULD NOT HAVE HAPPENED IT GENUINELY IS FRYING ME WHY DID HE GET A LOW TAPER FADE (what if ninja got a low taper fade!?) AND ALSO THE PERM LIKE BYE MY FRIEND SAID HE LOOKED LIKE THIS 1 FRIED IMAGE OF YEONJUN AND I COUDLNT AGREE MORE IT'S GENUINELY SO COOKED I CANT mb guys my heart is SET on being a HATER!!!
+            <br><br><strong class="text-pink-400 text-shadow-blue-950 text-shadow-xs">☆</strong> school isnt horrid but it isnt great either,,, tbh i cant judge it rn cus it's only been 10 days and i might just be getting nostalgiabaited but i feel like last yr was so much more?? alive?? than this year like man i dunno nothing hits as hard and i wasnt super close with last yrs seniors but they were just so like vibey and cool and now theyre GONE bye it's kinda sad, the bus is chaotic, classes r getting harder, my media teacher speaks at the PACE OF A SNAIL ISTGGGG i havent been making many new friends and js idk not fun?? maybe joining EOM FRC will be better idk anymore
+            <br><strong class="text-pink-400 text-shadow-blue-950 text-shadow-xs">♪</strong> sidenote: i love hack club
+            <br><br><strong class="text-pink-400 text-shadow-blue-950 text-shadow-xs">♫</strong> light - w2e
+          </p>
           <!-- post 1 -->
           <p class="text-left text-xl font-bold text-cyan-900 text-shadow-white text-shadow-lg px-20 py-3 m-6 bg-white/75 rounded-4xl shadow-pink-600 shadow-2xl/25 hover:px-22 hover:py-4 hover:shadow-pink-600 hover:shadow-2xl/45 duration-300" style="font-family: regular;">
             <strong class="text-2xl m-2 text-pink-600 decoration-wavy underline" style="font-family: hiruko;">done working on this website! heres a yap post</strong> <strong class="text-pink-400 text-shadow-blue-950 text-shadow-xs">(8/2/25)</strong>
